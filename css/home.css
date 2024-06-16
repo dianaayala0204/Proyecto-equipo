@@ -3,7 +3,7 @@
 }
 
 
-.bienvenida{
+.bienvenida{               /* listo*/
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -12,69 +12,140 @@
     
 }
 
-.bienvenida h1{
+.bienvenida h1{            /* listo*/                /* no toquen*/
     font-size: 30px;
 }
 
 
-.bienvenida p{
+.bienvenida p{             /* listo*/                 /* no toquen*/
    font-size: 20px;
 }
 
-.encavesadovene{
+.encavesadovene{            /* listo*/                  /* no toquen*/   
 
     margin-left:85px ;
 }
 
-.veneficio{    
-
-
-    display: flex;
+.veneficio{                 /* listo*/                   /* no toquen*/ 
+    
+    display:flex;
     margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10% ;
     background-color: rgb(183, 248, 226);
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    width:90% ;
-    height: 80%;
+    width:70% ;
+    height: 70%;
     
 }
 
-.veneficio h4{
+.veneficio h4{               /* listo*/                   /* no toquen*/ 
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.veneficio p{
+.veneficio p{                /* listo*/                   /* no toquen*/ 
 
     text-align: center;
-    font-size:15px ;
+    font-size:14px ;
     
 }
 
-.veneficio img{
+.veneficio img{               /* listo*/                   /* no toquen*/ 
+    
     width:43%;
     height:auto;
     
 }
 
-.hijo{
+.hijoveneficio{               /* listo*/                   /* no toquen*/ 
     padding: 5px;
     display: inline-block;
 }
 
-.container1{
+.container1{                  /* listo*/                   /* no toquen*/ 
+    background-color:rgb(215, 255, 141);
+    display:flexbox;
+    width: 100;
+    height: auto;
+    margin-top: 15px;
+}
 
-    background-color:rgb(255, 35, 255);
+.container1 h1{               /* listo*/                   /* no toquen*/ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     text-align: center;
     width: 100;
     height: 70;
 }
 
+.hijos{                       /* listo*/                   /* no toquen*/  
+    background-color:rgb(221, 221, 201);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: inline-block;
+    padding: 9px;
+    margin-left: 3%;
+    border-radius: 10px;
+    width: 19%;
+    height: auto ;
+    margin-bottom: 15px;
 
+}
 
+.hijos p{                     /* listo*/                   /* no toquen*/ 
+    text-align: center;
+    font-style:oblique;
+    color: rgb(117, 57, 1);
+    font-size: 13px;
 
+}
 
+.hijos h1{                   /* listo*/                   /* no toquen*/ 
+    color: rgb(61, 31, 0);
+    text-align: center;
+    font-style: oblique;
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+
+}
+
+.hijos img{                   /* listo*/                   /* no toquen*/ 
+    width: 45%;
+    height: auto ; 
+    padding: 3px;
+}
+
+.container2{                  /* listo*/                   /* no toquen*/     
+    background-color:rgb(237, 165, 255);
+    display:flexbox;
+    width: 100;
+    height: auto;
+    margin-top: 15px;
+}
+
+.container2 h1{                /* listo*/                   /* no toquen*/ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    width: 100;
+    height: 70;
+}
+
+.registro{                       /* listo*/                   /* no toquen*/ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgb(139, 151, 255);
+    width: 70%;
+    height: 70;
+}
+ 
+.registro label{
+
+    margin: 20px;
+}
 
 
 
