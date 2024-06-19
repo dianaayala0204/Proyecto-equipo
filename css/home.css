@@ -3,8 +3,64 @@
 }
 
 
-.bienvenida{               /* listo*/
-    padding: 20px;
+.header {
+    background-color: #0769e9;
+    height: 50px;
+    width: 100%;
+}
+  
+.nav {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0 auto;
+}
+  
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+  
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+    line-height: 50px;
+}
+  
+.nav-menu {
+    display: flex; 
+    padding: 2px;
+    list-style: none;
+}
+  
+.nav-menu-item {
+    font-size: 14px;
+    margin: 0 3px;
+    line-height: 50px;
+    width: max-content;     /*se utiliza para establecer el ancho máximo de un elemento*/ 
+}
+  
+.nav-menu-link {
+    padding: 8px;
+    border-radius: 3px;
+}
+  
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+    transition: 0.5s;
+}
+  
+/*media cueri (500) nav hecho*/
+
+
+main{
+    margin-bottom:15px;
+}
+
+.bienvenida{               /* listo*/                
+    padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     width: 100%; 
@@ -12,149 +68,290 @@
     
 }
 
-.bienvenida h1{            /* listo*/                /* no toquen*/
-    font-size: 30px;
+.bienvenida h1{            /* listo*/               
+    font-size: 25px;
 }
 
 
-.bienvenida p{             /* listo*/                 /* no toquen*/
-   font-size: 20px;
+.bienvenida p{             /* listo*/                
+   font-size: 13px;
 }
 
-.encavesadovene{            /* listo*/                  /* no toquen*/   
+.encavesadovene{            /* listo*/                 
 
-    margin-left:85px ;
+    margin-left:0px ;
 }
 
-.veneficio{                 /* listo*/                   /* no toquen*/ 
+.veneficio{                 /* listo*/                   
     
     display:flex;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 10% ;
+    margin-left: 0;
     background-color: rgb(183, 248, 226);
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    width:70% ;
-    height: 70%;
+    width:100% ;
+    height: auto;
     
 }
 
-.veneficio h4{               /* listo*/                   /* no toquen*/ 
+.veneficio h4{               /* listo*/                   
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.veneficio p{                /* listo*/                   /* no toquen*/ 
+.veneficio p{                /* listo*/                   
 
     text-align: center;
-    font-size:14px ;
+    font-size:12px ;
     
 }
 
-.veneficio img{               /* listo*/                   /* no toquen*/ 
+.veneficio img{               /* listo*/                  
     
-    width:43%;
+    width:40%;
     height:auto;
     
 }
 
-.hijoveneficio{               /* listo*/                   /* no toquen*/ 
+.hijoveneficio{               /* listo*/                  
     padding: 5px;
     display: inline-block;
 }
 
-.container1{                  /* listo*/                   /* no toquen*/ 
+.container1{                  /* listo*/                   
     background-color:rgb(215, 255, 141);
     display:flexbox;
-    width: 100;
+    width: 80%;
     height: auto;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left:40px;
 }
 
-.container1 h1{               /* listo*/                   /* no toquen*/ 
+.container1 h1{                /* listo*/                   
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
-    width: 100;
-    height: 70;
 }
 
-.hijos{                       /* listo*/                   /* no toquen*/  
+.hijos{                       /* listo*/                   
     background-color:rgb(221, 221, 201);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     text-align: center;
     display: inline-block;
-    padding: 9px;
+    padding: 4px;
     margin-left: 3%;
     border-radius: 10px;
-    width: 19%;
+    width: 20%;
     height: auto ;
     margin-bottom: 15px;
 
 }
 
-.hijos p{                     /* listo*/                   /* no toquen*/ 
+.hijos p{                     /* listo*/                   
     text-align: center;
     font-style:oblique;
     color: rgb(117, 57, 1);
-    font-size: 13px;
+    font-size: 6px;
 
 }
 
-.hijos h1{                   /* listo*/                   /* no toquen*/ 
+.hijos h1{                   /* listo*/                   
     color: rgb(61, 31, 0);
     text-align: center;
     font-style: oblique;
     margin-top: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-
+    font-size: 15px;
 }
 
-.hijos img{                   /* listo*/                   /* no toquen*/ 
-    width: 45%;
+.hijos img{                   /* listo*/                  
+    width: 46%;
     height: auto ; 
     padding: 3px;
 }
 
-.container2{                  /* listo*/                   /* no toquen*/     
+.container2{                  /* listo*/                    
     background-color:rgb(237, 165, 255);
     display:flexbox;
-    width: 100;
+    width: 80%;
     height: auto;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left:40px;
 }
 
-.container2 h1{                /* listo*/                   /* no toquen*/ 
+.container2 h1{                /* listo*/                  
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
-    width: 100;
-    height: 70;
 }
 
-.registro{                       /* listo*/                   /* no toquen*/ 
+.registro{                       /* listo*/                  
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     background-color: rgb(139, 151, 255);
-    width: 70%;
+    width: 80%;
     height: 70;
-}
- 
-.registro label{
-
-    margin: 20px;
+    margin-bottom: 15px;
+    margin-left: 40px;
 }
 
+.tituloregistro{                  /* listo*/
+    text-align: center;
+    color: #1c0486;
+    font-size: 20px;
+}
+
+label{                             /* listo*/
+    margin-left: 5px;
+}
+
+.boton{                               /* listo*/
+  margin-left: 50%
+}
+
+footer{                                 /* listo*/
+
+    font-size: 10px;
+}
+
+/* media cueri contenido listo*/
 
 
 
-/* # Mobile
-only screen and (min-width: 480px)
 
-# Tablet
-only screen and (min-width: 768px) 
 
-# Desktop
-only screen and (min-width: 992px) */
+
+
+
+
+
+/*https://getbootstrap.com/*/
+
+/* Table */           
+@media (min-width: 501px) and (max-width:800px){
+
+   
+    .bienvenida{               /* listo*/               /*no toquen*/
+        padding-left: 0;
+        padding-right: 0;
+        font-family:'Lucida Sans';
+        width:80%;
+        height: 50%
+       
+    }
+    
+    .bienvenida h1{            /* listo*/                /* no toquen*/
+        font-size: 16px;
+    }
+    
+    .bienvenida p{             /* listo*/                 /* no toquen*/
+       font-size: 7px;
+    }
+    
+    .encavesadovene{            /* listo*/                  /* no toquen*/   
+
+        margin-left:20px ;
+    }
+    
+    .veneficio{                 /* listo*/                   /* no toquen*/ 
+        
+        width:70%;
+        margin:8px;
+        margin-left: 0%;
+        
+    }
+    
+    .veneficio h4{               /* listo*/                   /* no toquen*/ 
+        text-align: center;
+        font-size: 7px;
+    }
+    
+    .veneficio p{                /* listo*/                   /* no toquen*/ 
+    
+        text-align: center;
+        font-size:5px ;
+        
+    }
+    
+    .veneficio img{               /* listo*/                   /* no toquen*/ 
+        margin-top:5px;
+        width:50%;
+        height:auto;
+        
+    }
+    
+    .hijoveneficio{               /* listo*/                   /* no toquen*/ 
+        padding: 1px;
+    }
+    
+    .container1{                  /* listo*/                   /* no toquen*/ 
+       margin-top: 10px;
+       width: 80%;
+       height: 40%;
+       margin-left:25px ;
+       margin-right: 25px;
+    }
+
+    .container1 h1{               /* listo*/                   /* no toquen*/ 
+        font-size: 16px;  
+    }
+    
+    .hijos{                       /* listo*/                   /* no toquen*/  
+        padding: 5px;
+        margin-left: 3%;
+        border-radius: 10px;
+        width: 40%;
+        margin-bottom: 9px;
+    
+    }
+    
+    .hijos p{                     /* listo*/                   /* no toquen*/ 
+        font-size: 5px;
+    }
+    
+    .hijos h1{                   /* listo*/                   /* no toquen*/ 
+        font-size: 18px;
+    }
+
+    .container2{                  /* listo*/                   /* no toquen*/ 
+        margin-top: 10px;
+        width: 80%;
+        height: 40%;
+        margin-left:25px ;
+        margin-right: 25px;
+     }
+    
+    .hijos img{                   /* listo*/                   /* no toquen*/ 
+        width: 47%;
+        padding: 4px;
+    }
+    
+    .container2 h1{               /* listo*/                   /* no toquen*/ 
+        font-size: 16px;  
+    }
+    
+    .registro{                       /* listo*/                   /* no toquen*/ 
+      font-size: 10px;
+      width: 80%;
+      height: 70;
+      margin-left:24px ;
+      margin-right: 24px;
+    }
+
+    .registro h1{
+    font-size: 20px;
+    }
+
+    label{
+    margin-left: 0px;
+    }
+
+    footer{
+
+    font-size: 8px;
+    }
+
+   
+}
+
