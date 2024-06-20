@@ -6,7 +6,7 @@
 .header {
     background-color: #0769e9;
     height: 50px;
-    width: 100%;
+    width: 102%;
 }
   
 .nav {
@@ -63,7 +63,7 @@ main{                      /*listo*/
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    width: 100%; 
+    width: 102%; 
     height: auto
     
 }
@@ -180,13 +180,13 @@ main{                      /*listo*/
     margin-left:25px;
 }
 
-.container2 h1{                /* listo*/                  
+.container2 h1{               /* listo*/                  
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-align: center;
 }
 
-.registro{                       /* listo*/                  
+.registro{                    /* listo*/                  
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     background-color: rgb(139, 151, 255);
@@ -196,25 +196,26 @@ main{                      /*listo*/
     margin-left: 5%;
 }
 
-.tituloregistro{                  /* listo*/
+.tituloregistro{             /* listo*/
     text-align: center;
     color: #1c0486;
     font-size: 20px;
 }
 
-label{                             /* listo*/
+label{                       /* listo*/
     margin-left: 5px;
 }
 
-.boton{                               /* listo*/
+.boton{                       /* listo*/
   margin-left: 50%
 }
 
-footer{                                 /* listo*/
+footer{                       /* listo*/
 
     font-size: 10px;
 }
 /* media cueri contenido listo*/                                                  /*https://getbootstrap.com/*/
+
 
 
 /*tablet */ /*DIANA
@@ -227,8 +228,7 @@ footer{                                 /* listo*/
   
 .logo {
     font-size: 30px;
-    font-weight: bold;
-    padding-left: 10px;
+    padding-left: 20px;
     line-height: 50px;
 }
 
@@ -267,7 +267,7 @@ footer{                                 /* listo*/
     
 }
 
-.veneficio{                 /*listo*/
+.veneficio{                    /*listo*/
 
     width: 90%;
     margin-left: 4%;
@@ -309,11 +309,11 @@ footer{                                 /* listo*/
     margin-left:4%;
 }
 
-.container2 h1{                /* listo*/       
+.container2 h1{               /* listo*/       
     font-size: 20px;   
 }
 
-.registro{                       /* listo*/                  
+.registro{                     /* listo*/                  
 
     font-size: 15px;
     width: 90%;
@@ -321,19 +321,20 @@ footer{                                 /* listo*/
     margin-left: 30px;
 }
 
-.tituloregistro{                  /* listo*/
+.tituloregistro{                /* listo*/
     font-size: 30px;
+    margin-bottom:15px ;
 }
 
-label{                             /* listo*/
-    margin-left: 25px;
+label{                         /* listo*/
+    margin-left: 15px;
 }
 
-.boton{                               /* listo*/
+.boton{                        /* listo*/
   margin-left: 70%
 }
 
-footer{                                 /* listo*/
+footer{                       /* listo*/
 
     font-size: 13px;
 }
@@ -342,7 +343,128 @@ footer{                                 /* listo*/
 
 }
 
-/* escritorio         
+/* escritorio */         
 @media (min-width: 1001px) and (max-width:1200px){
 
-}*/  
+      
+.logo {
+    font-size: 35px;
+    padding-left: 25px;
+}
+
+.nav-menu-item {
+    font-size: 26px;
+    margin: 0 12px;
+}
+  
+.nav-menu-link {
+    padding: 10px;
+}
+
+/* escritorio nav hecho*/
+
+.bienvenida h1{            /* listo*/               
+    font-size: 35px;
+}
+
+.bienvenida p{             /* listo*/                
+   font-size: 23px;
+}
+
+.veneficio{                 /* listo*/                   
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+}
+
+.veneficio h4{               /* listo*/                   
+    font-size:18px;
+}
+
+.veneficio p{                /* listo*/                   
+    font-size:15px ;
+    
+}
+
+.veneficio{                    /*listo*/
+
+    width: 95%;
+    margin-left: 3%;
+}
+
+.hijoveneficio{               /* listo*/                  
+    padding: 0px;
+}
+
+.container1{                  /* listo*/                   
+    
+    width: 95%;
+    margin-left:3%;
+}
+
+.container1 h1{                /* listo*/                   
+    font-size: 28px;
+}
+
+.hijos{                       /* listo*/                   
+    width: 22%;
+    margin-left: 20px;
+}
+
+.hijos p{                     /* listo*/                   
+    font-size: 16px;
+}
+
+.hijos h1{                   /* listo*/                   
+    font-size: 23px;
+}
+
+.hijos img{                   /* listo*/                  
+    width: 48%;
+    padding: 1px;
+}
+
+.container2{                  /* listo*/                    
+    width: 95%;
+    margin-left:3%;
+}
+
+.container2 h1{               /* listo*/       
+    font-size: 28px;   
+}
+
+.registro{                     /* listo*/                  
+
+    font-size: 22px;
+    width: 97%;
+    margin-left: 20px;
+}
+
+.tituloregistro{                /* listo*/
+    font-size: 35px;
+    margin-bottom:15px ;
+}
+
+label{                         /* listo*/
+    margin-left: 25px;
+}
+
+.boton{                        /* listo*/
+    margin-left: 70%
+}
+
+footer{                       /* listo*/
+
+    font-size: 16px;
+}
+
+
+/* escritorio hecho*/
+
+} 
+
+/* escrirorio monitor grande*/         
+@media (min-width: 1201px) and (max-width:1400px){
+
+}
