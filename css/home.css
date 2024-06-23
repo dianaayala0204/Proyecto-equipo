@@ -234,11 +234,11 @@ footer{                       /* listo*/
 
 .nav-menu-item {
     font-size: 18px;
-    margin: 0 9px;
+    margin: 0 8px;
 }
   
 .nav-menu-link {
-    padding: 5px;
+    padding: 15px;
 }
 
 /* tablet grade nav hecho*/
@@ -248,7 +248,7 @@ footer{                       /* listo*/
 }
 
 .bienvenida p{             /* listo*/                
-   font-size: 21px;
+   font-size: 20px;
 }
 
 .veneficio{                 /* listo*/                   
@@ -259,11 +259,11 @@ footer{                       /* listo*/
 }
 
 .veneficio h4{               /* listo*/                   
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .veneficio p{                /* listo*/                   
-    font-size:10px ;
+    font-size:12px ;
     
 }
 
@@ -309,7 +309,7 @@ footer{                       /* listo*/
     margin-left:4%;
 }
 
-.container2 h1{               /* listo*/       
+.container2 h1{                /* listo*/       
     font-size: 20px;   
 }
 
@@ -321,7 +321,7 @@ footer{                       /* listo*/
     margin-left: 30px;
 }
 
-.tituloregistro{                /* listo*/
+.tituloregistro{               /* listo*/
     font-size: 30px;
     margin-bottom:15px ;
 }
@@ -344,31 +344,36 @@ footer{                       /* listo*/
 }
 
 /* escritorio */         
-@media (min-width: 1001px) and (max-width:1200px){
+@media (min-width: 1001px) and (max-width:1200px){  /* escritorio hecho*/
 
       
 .logo {
-    font-size: 35px;
+    font-size: 37px;
     padding-left: 25px;
 }
 
 .nav-menu-item {
     font-size: 26px;
-    margin: 0 12px;
+    margin: 0 16px;
 }
   
 .nav-menu-link {
-    padding: 10px;
+    padding: 12px;
 }
+
+.header {
+    height: 55px;
+}
+
 
 /* escritorio nav hecho*/
 
 .bienvenida h1{            /* listo*/               
-    font-size: 35px;
+    font-size: 37px;
 }
 
 .bienvenida p{             /* listo*/                
-   font-size: 23px;
+   font-size: 30px;
 }
 
 .veneficio{                 /* listo*/                   
@@ -379,11 +384,11 @@ footer{                       /* listo*/
 }
 
 .veneficio h4{               /* listo*/                   
-    font-size:18px;
+    font-size:24px;
 }
 
 .veneficio p{                /* listo*/                   
-    font-size:15px ;
+    font-size:18px ;
     
 }
 
@@ -460,11 +465,125 @@ footer{                       /* listo*/
 }
 
 
-/* escritorio hecho*/
-
 } 
 
+
+
 /* escrirorio monitor grande*/         
-@media (min-width: 1201px) and (max-width:1400px){
+@media (min-width: 1201px) and (max-width:1400px){   /* escrirorio monitor grande listo*/ 
+
+      
+    .logo {
+        font-size: 45px;
+        padding-left: 30px;
+    }
+    
+    .nav-menu-item {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+      
+    .nav-menu-link {
+        padding: 25px;
+    }
+    
+    .header {
+        height: 65px;
+    }
+
+
+    /* escritorio nav hecho*/
+    
+    .bienvenida h1{            /* listo*/               
+        font-size: 45px;
+    }
+    
+    .bienvenida p{             /* listo*/                
+       font-size: 35px;
+    }
+    
+    .veneficio h4{               /* listo*/                   
+        font-size:30px;
+    }
+    
+    .veneficio p{                /* listo*/                   
+        font-size:25px ;
+        
+    }
+    
+    .veneficio{                    /*listo*/
+    
+        width: 95%;
+        margin-left: 3%;
+    }
+    
+    .hijoveneficio{               /* listo*/                  
+        padding: 0px;
+    }
+    
+    .container1{                  /* listo*/                   
+        
+        width: 95%;
+        margin-left:3%;
+    }
+    
+    .container1 h1{                /* listo*/                   
+        font-size: 30px;
+    }
+    
+    .hijos{                       /* listo*/                   
+        width: 22%;
+        margin-left: 20px;
+    }
+    
+    .hijos p{                     /* listo*/                   
+        font-size: 20px;
+    }
+    
+    .hijos h1{                   /* listo*/                   
+        font-size: 28px;
+    }
+    
+    .hijos img{                   /* listo*/                  
+        width: 48%;
+        padding: 1px;
+    }
+    
+    .container2{                  /* listo*/                    
+        width: 95%;
+        margin-left:3%;
+    }
+    
+    .container2 h1{               /* listo*/       
+        font-size: 30px;   
+    }
+    
+    .registro{                     /* listo*/                  
+    
+        font-size: 25px;
+        width: 97%;
+        margin-left: 20px;
+    }
+    
+    .tituloregistro{                /* listo*/
+        font-size: 42px;
+        margin-bottom:15px ;
+    }
+    
+    label{                         /* listo*/
+        margin-left: 35px;
+    }
+    
+    .boton{                        /* listo*/
+        margin-left: 70%
+    }
+    
+    footer{                       /* listo*/
+    
+        font-size: 18px;
+    }
+    
+
+
 
 }
