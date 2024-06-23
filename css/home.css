@@ -270,7 +270,7 @@ footer{                       /* listo*/
 .veneficio{                    /*listo*/
 
     width: 90%;
-    margin-left: 4%;
+    margin-left: 5%;
 }
 
 .hijoveneficio{               /* listo*/                  
@@ -279,7 +279,7 @@ footer{                       /* listo*/
 
 .container1{                  /* listo*/                   
     margin-top: 0px;
-    margin-left:4%;
+    margin-left:5%;
 }
 
 .container1 h1{                /* listo*/                   
@@ -306,7 +306,7 @@ footer{                       /* listo*/
 
 .container2{                  /* listo*/                    
     margin-top: 0px;
-    margin-left:4%;
+    margin-left:5%;
 }
 
 .container2 h1{                /* listo*/       
@@ -318,7 +318,7 @@ footer{                       /* listo*/
     font-size: 15px;
     width: 90%;
     height: auto;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .tituloregistro{               /* listo*/
@@ -335,7 +335,7 @@ label{                         /* listo*/
 }
 
 footer{                       /* listo*/
-
+    margin-left: 3px;
     font-size: 13px;
 }
 
@@ -395,7 +395,7 @@ footer{                       /* listo*/
 .veneficio{                    /*listo*/
 
     width: 95%;
-    margin-left: 3%;
+    margin-left: 4%;
 }
 
 .hijoveneficio{               /* listo*/                  
@@ -405,7 +405,7 @@ footer{                       /* listo*/
 .container1{                  /* listo*/                   
     
     width: 95%;
-    margin-left:3%;
+    margin-left:4%;
 }
 
 .container1 h1{                /* listo*/                   
@@ -432,7 +432,7 @@ footer{                       /* listo*/
 
 .container2{                  /* listo*/                    
     width: 95%;
-    margin-left:3%;
+    margin-left:4%;
 }
 
 .container2 h1{               /* listo*/       
@@ -443,7 +443,7 @@ footer{                       /* listo*/
 
     font-size: 22px;
     width: 97%;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .tituloregistro{                /* listo*/
@@ -460,7 +460,7 @@ label{                         /* listo*/
 }
 
 footer{                       /* listo*/
-
+    margin-left: 15px;
     font-size: 16px;
 }
 
@@ -582,8 +582,6 @@ footer{                       /* listo*/
     
         font-size: 18px;
     }
-    
-
 
 
 }
