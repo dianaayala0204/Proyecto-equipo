@@ -12,7 +12,7 @@
 .nav {
     display: flex; 
     justify-content: space-between; 
-    margin: 0 auto;
+    margin: 0 5px;
 }
   
 .nav-link {
@@ -21,9 +21,9 @@
 }
   
 .logo {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    padding-left: 5px;
+    padding-left: 3px;
     line-height: 50px;
 }
   
@@ -34,7 +34,7 @@
 }
   
 .nav-menu-item {
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 3px;
     line-height: 50px;
     width: max-content;     /*se utiliza para establecer el ancho máximo de un elemento*/ 
@@ -52,7 +52,69 @@
     transition: 0.5s;
 }
   
-/*media cueri (500) nav hecho*/
+/* TOGGLE  boton del navegador */
+.nav-toggle {
+    color: #09e5f5;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    
+    display: none;  
+}
+  
+@media (min-width:200px) and (max-width:500px){  
+  
+    .header {
+        height: 60px;   /*tamaño del nevegador*/
+          
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #38536e;
+        position: fixed;
+        top: 60px;
+        width:100%;
+        padding: 20px 0;
+      
+        height: calc(100% - 60px); 
+        overflow-y: auto;
+      
+        left: 100%; 
+        transition: left 0.3s;
+    }
+      
+    .nav-menu-item {
+        line-height: 70px;
+    }
+      
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #83c5f7;
+    }
+      
+    .nav-toggle {
+        display: block;
+    }
+      
+    .nav-menu_visible {  /*desplegable */
+        left: 0;
+    }
+      
+    .nav-toggle:focus:not(:focus-visible) { 
+        outline: none;
+    } 
+}
+    
+
+
+/*mobay (500) nav hecho*/
 
 
 main{                      /*listo*/
@@ -210,18 +272,143 @@ label{                       /* listo*/
   margin-left: 50%
 }
 
-footer{                       /* listo*/
 
-    font-size: 10px;
+.footer-servicio-social{
+   background-color: rgb(209, 209, 209);
+   width:100% ;
 }
-/* media cueri contenido listo*/                                                  /*https://getbootstrap.com/*/
+
+.info{
+    display: flex; 
+    justify-content:space-between; 
+    margin-right: 28px ;
+    margin-bottom: 15px;
+}
+
+
+.info img{
+    height: auto;
+    width: 20px;
+    height: auto;
+    padding: 2px;
+}
+
+
+.titulofooter{
+    font-size: 11px;
+    text-align: center;
+    margin-bottom:10px ;
+}
+
+.iten{
+    text-decoration: none;
+    list-style: none;                       /*listo*/
+    font-size: 9px;
+    margin-bottom: 2px;
+}
+
+
+/* mobay contenido listo   /*                                              /*https://getbootstrap.com/*/
 
 
 
-/*tablet */ /*DIANA
-@media (min-width: 501px) and (max-width:799px) */
+/*tablet */ /*DIANA*/
+@media (min-width: 501px) and (max-width: 800px) {
+    .logo {
+        font-size: 23px;
+        padding-left: 8px;
+    }
+
+    .nav-menu-item {
+        font-size: 13px;
+        margin: 0 5px;
+    }
+
+    .nav-menu-link {
+        padding: 6px;
+    }
+
+    .bienvenida h1 {
+        font-size: 22px;
+    }
+
+    .bienvenida p {
+        font-size: 18px;
+    }
+
+    .veneficio {
+        margin: 10px 5%;
+        width: 90%;
+    }
+
+    .veneficio h4 {
+        font-size: 15px;
+    }
+
+    .veneficio p {
+        font-size: 11px;
+    }
+
+    .veneficio img {
+        width: 50%;
+    }
 
 
+    .container1 {
+        margin-left: 20px;
+    }
+
+    .container1 h1 {
+        font-size: 19px;
+    }
+
+    .hijos {
+        margin-left: 10px;
+        width: 21%;
+    }
+
+    .hijos p {
+        font-size: 7px;
+    }
+
+    .hijos h1 {
+        font-size: 18px;
+    }
+
+    .hijos img {
+        width: 47%;
+    }
+
+    .container2 {
+        margin-left: 20px;
+    }
+
+    .container2 h1 {
+        font-size: 18px;
+    }
+
+    .registro {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+
+
+    .tituloregistro {
+        font-size: 23px;
+    }
+
+    label {
+        margin-left: 10px;
+    }
+
+    .boton {
+        margin-left: 65%;
+    }
+
+    footer {
+        font-size: 9px;
+    }
+}
 
 /* Table grande */           
 @media (min-width: 800px) and (max-width:1000px){      

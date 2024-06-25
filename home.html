@@ -19,14 +19,17 @@
         <link rel="icon" href=""> <!--le inserto una pequeña imagen a la etiqueta />-->
          
         <link rel="stylesheet" href="css\home.css">
+
+        <script defer src="java/nav.js"></script>
        
         <link rel="shortcut icon" href="imagenes/carrito verde icon.ico" type="image/x-icon"><!-- icono de navegacion -->
        
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title> Marimar </title>
+
        
   </head>
 <body>
@@ -35,6 +38,9 @@
 
     <nav class="nav">
       <a href="#" class="logo nav-link">Indice</a>
+      <button class="nav-toggle" aria-label="Abrir menú">    <!--la amurguesa va en midia cueri-->
+        <i class="fa fa-bars"></i>
+      </button>
       <ul class="nav-menu">
         <li class="nav-menu-item">
           <a href="#" class="nav-menu-link nav-link">Promociones</a>
@@ -188,12 +194,12 @@
             <br> <br>
             
             <label for="categoria">Categoría: </label>
-            <input type="text" name="categoria" id="categoria">
+            <input type="text" name="categoria" id="categoria" placeholder=" Categoría" >
         
             <br> <br>
       
             <label for="comentario">Description del Producto</label>
-            <textarea name="comentario" id="comentario" ></textarea>
+            <textarea name="comentario" id="comentario" placeholder=" Description" ></textarea>
   
             <br> <br>
   
@@ -216,19 +222,23 @@
   
   </main>
   
-  <footer>
-      
-    <p id="fecha-actualizacion"></p>
+  <footer class="footer-servicio-social">
   
-    <ul> 
-  
-      <li class="iten">Auntora: Daniela Ponce / ---nombre---</li>
-      <li class="iten"></li> 
-      <li class="iten"><a>gmail:</a><a href="mailto:estudiosdanielaponce25@gmail.com" class="linck">estudiosdanielaponce25@gmail.com</a></li>
-      <li class="iten"></li>
-      <li class="iten">Telefono:</li>
-        
-    </ul>
+    <div>
+      <p class="titulofooter">SÍGUENOS EN NUESTRAS REDES SOCIALES</p> 
+      <ul class="info">
+        <li class="iten"><a href="https://www.facebook.com/?locale=es_LA" title="Facebook" target="_blank"><img src="imagenes/facebook_logo.png"></a>inventa un facebook</li> 
+        <li class="iten"><a href="https://www.youtube.com/user/GarnierMex" title="instagram" target="_blank"><img src="imagenes/instagram.png"></a>inventa un instagram</li> 
+        <li class="iten"><a href="https://twitter.com/garniermx" title="Twitter" target="_blank"><img src="imagenes/twiter.png"></a> inventa un twiter</li> 
+        <li class="iten"><a><img src="imagenes/whatsapp.png"> telefono</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <ul>
+        <li class="iten">Auntora: Daniela Ponce / ---nombre---</li>
+      </ul>
+    </div>
 
   </footer>
 </body>
