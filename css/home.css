@@ -96,7 +96,7 @@
     .nav-menu-link:hover,
     .nav-menu-link_active {
         background: none;
-        color: #83c5f7;
+        color: #95d0fd;
     }
       
     .nav-toggle {
@@ -137,6 +137,12 @@ main{                      /*listo*/
 
 .bienvenida p{             /* listo*/                
    font-size: 15px;
+}
+
+iframe{
+
+    height:250px;
+    width:110%;
 }
 
 .encavesadovene{            /* listo*/                 
@@ -275,36 +281,34 @@ label{                       /* listo*/
 
 .footer-servicio-social{
    background-color: rgb(209, 209, 209);
-   width:100% ;
+   width: 102% ;
 }
 
 .info{
     display: flex; 
-    justify-content:space-between; 
-    margin-right: 28px ;
-    margin-bottom: 15px;
+    justify-content:space-between;
+    margin-right: 300px; 
+    margin-left: 160px;
 }
 
 
 .info img{
     height: auto;
-    width: 20px;
-    height: auto;
+    width: 25px;
     padding: 2px;
 }
 
 
 .titulofooter{
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
     margin-bottom:10px ;
 }
 
 .iten{
-    text-decoration: none;
-    list-style: none;                       /*listo*/
+    list-style: none;                      /*listo*/
     font-size: 9px;
-    margin-bottom: 2px;
+    padding-bottom: 10px ;
 }
 
 
@@ -334,6 +338,12 @@ label{                       /* listo*/
 
     .bienvenida p {
         font-size: 18px;
+    }
+
+    iframe{
+
+        height:250px;
+        width:110%;
     }
 
     .veneficio {
@@ -405,13 +415,35 @@ label{                       /* listo*/
         margin-left: 65%;
     }
 
-    footer {
-        font-size: 9px;
+    .info img{
+        height: auto;
+        width: 28px;
+        height: auto;
+        padding: 2px;
     }
+    
+    .info{
+        display: flex; 
+        justify-content:space-between; 
+        padding-left: 75px;
+    }
+     
+    .titulofooter{
+        text-align: center;
+        font-size: 13px;
+    }
+     
+   
+    .iten{
+        list-style: none;                       /*listo*/
+        font-size: 10px;
+        padding-bottom: 10px ;
+    }
+
 }
 
 /* Table grande */           
-@media (min-width: 800px) and (max-width:1000px){      
+@media (min-width: 801px) and (max-width:1000px){      
   
 .logo {
     font-size: 30px;
@@ -423,7 +455,7 @@ label{                       /* listo*/
     font-size: 18px;
     margin: 0 8px;
 }
-  
+
 .nav-menu-link {
     padding: 15px;
 }
@@ -436,6 +468,12 @@ label{                       /* listo*/
 
 .bienvenida p{             /* listo*/                
    font-size: 20px;
+}
+
+iframe{
+
+    height:260px;
+    width:110%;
 }
 
 .veneficio{                 /* listo*/                   
@@ -521,9 +559,25 @@ label{                         /* listo*/
   margin-left: 70%
 }
 
-footer{                       /* listo*/
-    margin-left: 3px;
+.info img{
+    height: auto;
+    width: 30px;
+    padding: 2px;
+}
+
+.info{
+    display: flex; 
+    justify-content:space-between; 
+    padding-left: 140px;
+}
+ 
+.titulofooter{
+    font-size: 15px;
+}
+ 
+.iten{                      /*listo*/
     font-size: 13px;
+    padding-bottom: 10px ;
 }
 
 /*Tablet grande listo*/
@@ -543,7 +597,8 @@ footer{                       /* listo*/
     font-size: 26px;
     margin: 0 16px;
 }
-  
+ 
+
 .nav-menu-link {
     padding: 12px;
 }
@@ -561,6 +616,12 @@ footer{                       /* listo*/
 
 .bienvenida p{             /* listo*/                
    font-size: 30px;
+}
+
+iframe{
+
+    height:270px;
+    width:110%;
 }
 
 .veneficio{                 /* listo*/                   
@@ -646,14 +707,34 @@ label{                         /* listo*/
     margin-left: 70%
 }
 
-footer{                       /* listo*/
-    margin-left: 15px;
+
+.info img{
+    height: auto;
+    width: 40px;
+    padding: 2px;
+}
+
+.info{
+    display: flex; 
+    justify-content:space-between; 
+    margin-right: 400px ;
+    margin-bottom: 15px;
+    margin-left: 350px;
+
+}
+ 
+.titulofooter{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+ 
+.iten{                      /*listo*/
     font-size: 16px;
+    padding-bottom: 10px ;
 }
 
 
 } 
-
 
 
 /* escrirorio monitor grande*/         
@@ -669,7 +750,8 @@ footer{                       /* listo*/
         font-size: 30px;
         margin: 0 10px;
     }
-      
+
+   
     .nav-menu-link {
         padding: 25px;
     }
@@ -689,6 +771,13 @@ footer{                       /* listo*/
        font-size: 35px;
     }
     
+    iframe{
+
+        height:270px;
+        width:110%;
+    }
+
+
     .veneficio h4{               /* listo*/                   
         font-size:30px;
     }
@@ -765,10 +854,33 @@ footer{                       /* listo*/
         margin-left: 70%
     }
     
-    footer{                       /* listo*/
-    
-        font-size: 18px;
-    }
+   
+
+.info img{
+    height: auto;
+    width: 50px;
+    padding: 2px;
+}
+
+.info{
+    display: flex; 
+    justify-content:space-between; 
+    margin-right: 400px ;
+    margin-bottom: 15px;
+    margin-left: 350px;
+
+}
+ 
+.titulofooter{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+ 
+.iten{                      /*listo*/
+    font-size: 17px;
+    padding-bottom: 10px ;
+}
+
 
 
 }
