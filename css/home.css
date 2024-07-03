@@ -254,12 +254,59 @@ iframe{
     text-align: center;
 }
 
+
+.fondonuevo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    
+}
+
+.nuevo{                       /* listo*/                   
+    background-color:#ffe6b0;
+    font-family:Georgia;
+    text-align: center;
+    display: inline-block;
+    margin-left: 3%;
+    border-radius: 10px;
+    width: 20%;
+    height: auto ;
+    margin-left: 18px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+.nuevo p{                     /* listo*/                   
+    text-align: center;
+    font-style:oblique;
+    color: rgb(8, 4, 0);
+    font-size: 7px;
+
+}
+
+.nuevo h1{                     /* listo*/                   
+    text-align: center;
+    font-style:oblique;
+    background-color:crimson;
+    block-size: 30px;
+    color:oldlace;
+    font-size: 18px;
+
+}
+
+.nuevo img{                   /* listo*/                  
+    width: 50%;
+    height: auto ; 
+    padding: 3px;
+}
+
 .registro{                    /* listo*/                  
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    text-align: center; 
     background-color: rgb(139, 151, 255);
     width: 90%;
-    height: 70;
     margin-bottom: 15px;
     margin-left: 5%;
 }
@@ -270,9 +317,6 @@ iframe{
     font-size: 20px;
 }
 
-label{                       /* listo*/
-    margin-left: 5px;
-}
 
 .boton{                       /* listo*/
   margin-left: 50%
@@ -311,7 +355,81 @@ label{                       /* listo*/
     padding-bottom: 10px ;
 }
 
+/* chat de emergensia*/
+.open-botton{
+    width: 190px;
+    padding: 5px 7px;
+    position: fixed;
+    bottom: 0px;
+    right: 45px;
+    margin-bottom: 24px ;
+    font-weight: 700;  /*pone gruesa la letra*/
+    font-size: 12px;
+    border-radius: 6px;  /*tamaño del borde del boton*/
+    cursor: pointer;
+    color: #fff;
+    background-color: #e40404;
+    
+}
 
+.open-botton i{
+    display:inline-flex;
+    margin-right: 5px;
+}
+
+.chat__popup{
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+}
+
+.form__cotainer{
+    max-width: 270px;
+    padding: 10px;
+    font-size: .8rem;
+    color: #000;
+    background-color: #ecf7ff;
+}
+
+.form__cotainer textarea{
+    width: 85%;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    background: #e7e1e1;
+    resize: none;
+    min-height: 150px;
+}
+
+.form__cotainer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form__cotainer textarea:focus{
+    background-color: #cecbcb;
+    outline: none;
+}
+
+.form__cotainer .btn{
+    width: 90%;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background-color: #04aa0c;
+}
+
+.form__cotainer{
+    opacity: 1;
+}
+
+.form__cotainer .cancel{
+    background-color: #e40404;
+}
 /* mobay contenido listo   /*                                              /*https://getbootstrap.com/*/
 
 
@@ -319,13 +437,13 @@ label{                       /* listo*/
 /*tablet */ /*DIANA*/
 @media (min-width: 501px) and (max-width: 800px) {
     .logo {
-        font-size: 23px;
-        padding-left: 8px;
+        font-size: 21px;
+        padding-left: 5px;
     }
 
     .nav-menu-item {
         font-size: 13px;
-        margin: 0 5px;
+        margin: 0 3px;
     }
 
     .nav-menu-link {
@@ -398,8 +516,7 @@ label{                       /* listo*/
     }
 
     .registro {
-        font-size: 10px;
-        margin-left: 20px;
+        font-size: 12px;
     }
 
 
@@ -407,9 +524,6 @@ label{                       /* listo*/
         font-size: 23px;
     }
 
-    label {
-        margin-left: 10px;
-    }
 
     .boton {
         margin-left: 65%;
@@ -440,6 +554,32 @@ label{                       /* listo*/
         padding-bottom: 10px ;
     }
 
+    /* chat de emergensia*/  /*listo*/
+   .open-botton{
+    right: 60px;
+    font-size: 13px;
+ 
+   }
+
+   .open-botton i{
+    margin-right: 2px;
+   }
+
+   .chat__popup{
+    right: 25px;
+   }
+
+  .form__cotainer textarea{
+    width: 85%;
+  }
+
+  .form__cotainer .btn{
+    width: 90%;
+  }
+
+
+
+  
 }
 
 /* Table grande */           
@@ -541,18 +681,11 @@ iframe{
 .registro{                     /* listo*/                  
 
     font-size: 15px;
-    width: 90%;
-    height: auto;
-    margin-left: 40px;
 }
 
 .tituloregistro{               /* listo*/
     font-size: 30px;
     margin-bottom:15px ;
-}
-
-label{                         /* listo*/
-    margin-left: 15px;
 }
 
 .boton{                        /* listo*/
@@ -569,19 +702,37 @@ label{                         /* listo*/
     display: flex; 
     justify-content:space-between; 
     padding-left: 140px;
-}
+  }
  
-.titulofooter{
+ .titulofooter{
     font-size: 15px;
-}
+  }
  
-.iten{                      /*listo*/
+ .iten{                      /*listo*/
     font-size: 13px;
     padding-bottom: 10px ;
+  }
+
+  /* chat de emergensia*/    /*listo*/
+  .open-botton{
+    right: 70px;
+    font-size: 15px;
+    width: 220px;
+   }
+
+  .chat__popup{
+    right: 58px;
+   }
+
+
+  .form__cotainer textarea{
+    width: 84%;
+   }
+  .form__cotainer .btn{
+    width: 86%;
 }
 
-/*Tablet grande listo*/
-
+  /*Tablet grande listo*/
 }
 
 /* escritorio */         
@@ -690,17 +841,12 @@ iframe{
 .registro{                     /* listo*/                  
 
     font-size: 22px;
-    width: 97%;
-    margin-left: 30px;
+  
 }
 
 .tituloregistro{                /* listo*/
     font-size: 35px;
     margin-bottom:15px ;
-}
-
-label{                         /* listo*/
-    margin-left: 25px;
 }
 
 .boton{                        /* listo*/
@@ -731,6 +877,27 @@ label{                         /* listo*/
 .iten{                      /*listo*/
     font-size: 16px;
     padding-bottom: 10px ;
+}
+
+
+/* chat de emergensia*/    /*listo*/
+.open-botton{
+    right: 97px;
+    font-size: 18px;
+    width: 250px;
+}
+
+.chat__popup{
+    right: 85px;
+}
+
+
+.form__cotainer textarea{
+    width: 84%;
+}
+
+.form__cotainer .btn{
+    width: 86%;
 }
 
 
@@ -837,8 +1004,7 @@ label{                         /* listo*/
     .registro{                     /* listo*/                  
     
         font-size: 25px;
-        width: 97%;
-        margin-left: 20px;
+        
     }
     
     .tituloregistro{                /* listo*/
@@ -846,41 +1012,56 @@ label{                         /* listo*/
         margin-bottom:15px ;
     }
     
-    label{                         /* listo*/
-        margin-left: 35px;
-    }
+   
     
     .boton{                        /* listo*/
         margin-left: 70%
     }
-    
-   
 
-.info img{
-    height: auto;
-    width: 50px;
-    padding: 2px;
-}
+   .info img{
+      height: auto;
+      width: 50px;
+      padding: 2px;
+    }
 
-.info{
-    display: flex; 
-    justify-content:space-between; 
-    margin-right: 400px ;
-    margin-bottom: 15px;
-    margin-left: 350px;
+    .info{
+      display: flex; 
+      justify-content:space-between; 
+      margin-right: 400px ;
+      margin-bottom: 15px;
+     margin-left: 350px;
 
-}
+    }
  
-.titulofooter{
-    font-size: 25px;
-    margin-bottom: 20px;
-}
+   .titulofooter{
+     font-size: 25px;
+     margin-bottom: 20px;
+    }
  
-.iten{                      /*listo*/
-    font-size: 17px;
-    padding-bottom: 10px ;
+  .iten{                      /*listo*/
+     font-size: 17px;
+     padding-bottom: 10px ;
+  }
+
+   /* chat de emergensia*/    /*listo*/
+.open-botton{
+    right: 120px;
+    font-size: 20px;
+    width: 270px;
 }
 
+.chat__popup{
+    right: 120px;
+}
+
+
+.form__cotainer textarea{
+    width: 96%;
+}
+
+.form__cotainer .btn{
+    width: 98%;
+}
 
 
 }

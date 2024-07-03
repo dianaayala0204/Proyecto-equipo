@@ -16,13 +16,13 @@
        
         <link rel="stylesheet" href=""> <!--adjunta otra pagina wed externa a nuestra pagina wed />-->
          
-        <link rel="icon" href=""> <!--le inserto una pequeña imagen a la etiqueta />-->
-         
         <link rel="stylesheet" href="css\home.css">
 
         <script defer src="java/nav.js"></script>
+
        
-        <link rel="shortcut icon" href="imagenes/carrito verde icon.ico" type="image/x-icon"><!-- icono de navegacion -->
+       
+        <link rel="shortcut icon" href="imagenes/carrito verde icon.ico" type="image/x-icon"><!--le inserto una pequeña imagen a la etiqueta />-->
        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -53,7 +53,7 @@
           <a href="#" class="nav-menu-link nav-link">Productos</a>
         </li>
         <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link nav-link">Los Productos más vendidos</a>
+          <a href="#" class="nav-menu-link nav-link">Comentarios de nuestra comunidad</a>
         </li>
       </ul>
     </nav>
@@ -61,6 +61,20 @@
   </header>
 
  <main> 
+
+
+  <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
+  <div class="chat__popup" id="myfrom">
+    <form action="#" class="form__cotainer">
+      <h2>Chatea con nosotros</h2>
+      <label for="msg"><b>Mensaje</b></label>
+      <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+    </form>
+  </div>
+  
+
     <div class="bienvenida" style="background-image: url(imagenes/colores.jpg)">
         
       <h1> <b>Bienvenido a la tienda !!!</b></h1>
@@ -72,6 +86,11 @@
 
     <iframe src="http://127.0.0.1:5500/carruzel.html" frameborder="0" ></iframe>
 
+    <section class="mensajeuculto">
+      <h1>Descubre que masaje oculto hay en la consola</h1> 
+    </section>
+  
+    
 
     <header class="encavesadovene">
   
@@ -180,50 +199,111 @@
       
     </section>
   
+    <div class="fondonuevo" style= " background-image: url(imagenes/estrellasparanuevo.jpeg);">
+
+
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="imagenes/detergente.jpeg">
+        <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+      </div>
+  
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="imagenes/detergente.jpeg">
+        <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+      </div>
+  
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="imagenes/detergente.jpeg">
+        <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+      </div>
+  
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="imagenes/detergente.jpeg">
+        <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+      </div>
+  
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="imagenes/detergente.jpeg">
+        <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+      </div>
+  
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="imagenes/detergente.jpeg">
+        <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+      </div>
+  
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="imagenes/detergente.jpeg">
+        <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+      </div>
+      
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="imagenes/detergente.jpeg">
+        <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+        </div>
+
+
+    </div>
+
     <section class="registro">          <!-- Formulario de carga de nuevos productos -->
         
           <form action="/registro" method="post">
       
             <h1 class="tituloregistro" ><u><b>Carga tu producto</b></u></h1>
         
-            <label for="nombre">Nombre y Apllido:</label>
+            <label for="nombre">Nombre y Apllido</label>
+            <br> 
             <input type="text" id="nombre" name="nombre" placeholder="nombre completo">
   
             <br> <br>
             
             <label for="email">Tu correo que más frecuentas</label>
+            <br>
             <input type="email" id="email" name="email" placeholder=" correo electrónico">
             
             <br> <br>
   
             <label for="telefono">Un telefono para que se comunique tu comprador</label>
+             <br>
             <input type="tel" id="telefono" name="telefono" placeholder=" Telefono">
   
             <br> <br>
             
             <label for="categoria">Categoría: </label>
+            <br>
             <input type="text" name="categoria" id="categoria" placeholder=" Categoría" >
         
             <br> <br>
       
             <label for="comentario">Description del Producto</label>
+             <br>
             <textarea name="comentario" id="comentario" placeholder=" Description" ></textarea>
   
             <br> <br>
   
             <label for="localidad">Locadad o Provincia
+             <br>
             <input type="text" id="localidad" name="localidad" placeholder="Localidad/Provincia">
   
             <br> <br>
         
             <label for="precio">El Precio:
+             <br>
             <input type="text" id="precio" name="precio" placeholder="El precio que considere">
         
             <br> <br>
         
             <input class="boton" type="submit" value="Enviar"> <input type="reset">
 
-            <br> <br>
+           <br>
         
           </form>
     </section>
@@ -243,11 +323,14 @@
 
       <div>
         <ul>
-          <li class="iten">Auntora: Daniela Ponce , Diana Ayala , Cami Castellanos y Agustina </li>
+          <li class="iten">Auntora: Daniela Ponce , Diana Ayala , Cami Castellanos y Agustina Barrios </li>
         </ul>
       </div>
 
     </div>
   </footer>
+
 </body>
+<script src="java/chatdeemergencia.js"></script>
+<script src="java/mensajeconsola.js"></script>
 </html>
