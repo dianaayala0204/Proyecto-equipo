@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+}
+
+.ecavesadocompra{
+   background-color: aquamarine;
+   width: 102%;
+   height: 40px;
+}
+
+.mediodepago{
+    display: flex; 
+    justify-content: space-between;
+    margin-right: 22px;
+    margin-left: 13px;
+}
+
+.targeta{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: flex;
+}
+
+.targeta img{
+
+    width: 43%;
+    height: 87%;
+}
+
+
+.carrito {
+    display: block;
+    border: none;
+    height: 40%;
+    margin-top: 2px;
+    background-color: #f7e1d9;
+}
+
+
+.carrito img{
+    width: 33px;
+    height: auto;
+    display: block;
+    margin-top: 1px;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    
+    .ecavesadocompra{
+       
+        height: 55px;
+    }
+     
+    .mediodepago{
+        margin-right: 7px;
+        margin-left: 13px;
+    }
+
+    .targeta{
+        margin-top: 0;
+    }
+     
+    .targeta img{
+     
+        width: 40%;
+        height: 70%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .carrito{
+      background-color: #f7e1d9;
+    }
+     
+    .carrito img{
+        width: 43px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
+
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    
+    .ecavesadocompra{
+       
+        height: 65px;
+    }
+     
+    .mediodepago{
+        margin-right: 7px;
+        margin-left: 13px;
+    }
+
+    .targeta{
+        margin-top: 0;
+    }
+     
+    .targeta img{
+     
+        width: 43%;
+        height: 70%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .carrito{
+      background-color: #f7e1d9;
+    }
+     
+    .carrito img{
+        width: 55px;
+    
+    }
+}

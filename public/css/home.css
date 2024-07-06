@@ -142,7 +142,7 @@ main{                      /*listo*/
 iframe{
 
     height:250px;
-    width:110%;
+    width:102%;
 }
 
 .encavesadovene{            /* listo*/                 
@@ -258,8 +258,7 @@ iframe{
 .fondonuevo{
     margin-top: 10px;
     margin-bottom: 10px;
-   
-    
+     
 }
 
 .nuevo{                       /* listo*/                   
@@ -267,13 +266,12 @@ iframe{
     font-family:Georgia;
     text-align: center;
     display: inline-block;
-    margin-left: 3%;
     border-radius: 10px;
     width: 20%;
     height: auto ;
-    margin-left: 18px;
+    margin-left: 17px;
     margin-bottom: 15px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 
@@ -281,7 +279,7 @@ iframe{
     text-align: center;
     font-style:oblique;
     color: rgb(8, 4, 0);
-    font-size: 7px;
+    font-size: 8px;
 
 }
 
@@ -296,7 +294,7 @@ iframe{
 }
 
 .nuevo img{                   /* listo*/                  
-    width: 50%;
+    width: 60%;
     height: auto ; 
     padding: 3px;
 }
@@ -461,7 +459,7 @@ iframe{
     iframe{
 
         height:250px;
-        width:110%;
+        width:102%;
     }
 
     .veneficio {
@@ -513,6 +511,32 @@ iframe{
 
     .container2 h1 {
         font-size: 18px;
+    }
+
+    .nuevo{                       /* listo*/                   
+        width: 22%;
+        height: auto ;
+        margin-left: 9px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    
+    .nuevo p{                     /* listo*/                   
+        font-size: 9px;
+    
+    }
+    
+    .nuevo h1{                     /* listo*/                   
+        block-size: 35px;
+        font-size: 20px;
+        block-size: 35px;
+    }
+    
+    .nuevo img{                   /* listo*/                  
+        width: 63%;
+        height: auto ; 
+        padding: 3px;
     }
 
     .registro {
@@ -613,7 +637,7 @@ iframe{
 iframe{
 
     height:260px;
-    width:110%;
+    width:102%;
 }
 
 .veneficio{                 /* listo*/                   
@@ -677,6 +701,32 @@ iframe{
 .container2 h1{                /* listo*/       
     font-size: 20px;   
 }
+
+.nuevo{                       /* listo*/                   
+    width: 23%;
+    height: auto ;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.nuevo p{                     /* listo*/                   
+    font-size: 10px;
+
+}
+
+.nuevo h1{                     /* listo*/                   
+    block-size: 35px;
+    font-size: 23px;
+}
+
+.nuevo img{                   /* listo*/                  
+    width: 65%;
+    height: auto ; 
+    padding: 3px;
+}
+
 
 .registro{                     /* listo*/                  
 
@@ -836,6 +886,30 @@ iframe{
 
 .container2 h1{               /* listo*/       
     font-size: 28px;   
+}
+
+.nuevo{                       /* listo*/                   
+    width: 23%;
+    height: auto ;
+    margin-left: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.nuevo p{                     /* listo*/                   
+    font-size: 13px;
+}
+
+.nuevo h1{                     /* listo*/                   
+    block-size: 45px;
+    font-size: 25px;
+}
+
+.nuevo img{                   /* listo*/                  
+    width: 56%;
+    height: auto ; 
+    padding: 3px;
 }
 
 .registro{                     /* listo*/                  
@@ -1000,6 +1074,31 @@ iframe{
     .container2 h1{               /* listo*/       
         font-size: 30px;   
     }
+
+    .nuevo{                       /* listo*/                   
+        width: 23%;
+        height: auto ;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    
+    .nuevo p{                     /* listo*/                   
+        font-size: 17px;
+    }
+    
+    .nuevo h1{                     /* listo*/                   
+        block-size: 50px;
+        font-size: 30px;
+    }
+    
+    .nuevo img{                   /* listo*/                  
+        width: 58%;
+        height: auto ; 
+        padding: 3px;
+    }
+
     
     .registro{                     /* listo*/                  
     
@@ -1045,13 +1144,20 @@ iframe{
 
    /* chat de emergensia*/    /*listo*/
 .open-botton{
-    right: 120px;
-    font-size: 20px;
+    right: 140px;
+    font-size: 22px;
     width: 270px;
 }
 
 .chat__popup{
-    right: 120px;
+    right: 140px;
+}
+
+.form__cotainer {
+    max-width: 300px;
+    padding: 10px;
+    font-size: 17px;
+ 
 }
 
 
