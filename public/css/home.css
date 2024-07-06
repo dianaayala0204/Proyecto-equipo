@@ -513,6 +513,11 @@ iframe{
         font-size: 18px;
     }
 
+    .fondonuevo{
+        width: 102%;
+    }
+
+
     .nuevo{                       /* listo*/                   
         width: 22%;
         height: auto ;
@@ -702,6 +707,12 @@ iframe{
     font-size: 20px;   
 }
 
+
+.fondonuevo{
+    width: 102%;
+}
+
+
 .nuevo{                       /* listo*/                   
     width: 23%;
     height: auto ;
@@ -806,10 +817,15 @@ iframe{
 
 .header {
     height: 55px;
+    width: 103%;
 }
 
 
 /* escritorio nav hecho*/
+
+.bienvenida{               /* listo*/                
+    width: 103%;    
+}
 
 .bienvenida h1{            /* listo*/               
     font-size: 37px;
@@ -822,7 +838,7 @@ iframe{
 iframe{
 
     height:270px;
-    width:110%;
+    width:103%;
 }
 
 .veneficio{                 /* listo*/                   
@@ -886,6 +902,11 @@ iframe{
 
 .container2 h1{               /* listo*/       
     font-size: 28px;   
+}
+
+
+.fondonuevo{
+    width: 103%;
 }
 
 .nuevo{                       /* listo*/                   
@@ -999,10 +1020,16 @@ iframe{
     
     .header {
         height: 65px;
+        width: 110%;
+    
     }
 
 
     /* escritorio nav hecho*/
+
+    .bienvenida{               /* listo*/                
+        width: 110%;    
+    }
     
     .bienvenida h1{            /* listo*/               
         font-size: 45px;
@@ -1073,6 +1100,10 @@ iframe{
     
     .container2 h1{               /* listo*/       
         font-size: 30px;   
+    }
+
+    .fondonuevo{
+        width: 110%; 
     }
 
     .nuevo{                       /* listo*/                   

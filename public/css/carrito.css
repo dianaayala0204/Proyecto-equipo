@@ -79,7 +79,6 @@
     }
 }
 
-
 @media (min-width: 801px) and (max-width: 1000px) {
     
     .ecavesadocompra{
@@ -113,3 +112,39 @@
     
     }
 }
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    
+    .ecavesadocompra{
+        width: 103%;
+        height: 80px;
+    }
+     
+    .mediodepago{
+        margin-right: 7px;
+        margin-left: 13px;
+    }
+
+    .targeta{
+        margin-top: 0;
+    }
+     
+    .targeta img{
+     
+        width: 43%;
+        height: 70%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .carrito{
+      background-color: #f7e1d9;
+      margin: 0%;
+    }
+     
+    .carrito img{
+        width: 70px;
+    
+    }
+}
+
