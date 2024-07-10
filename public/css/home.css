@@ -58,7 +58,7 @@
     background: none;
     border: none;
     font-size: 30px;
-    padding: 0 20px;
+    padding: 0 25px;
     line-height: 60px;
     cursor: pointer;
     
@@ -355,14 +355,14 @@ iframe{
 
 /* chat de emergensia*/
 .open-botton{
-    width: 190px;
+    width: 150px;
     padding: 5px 7px;
     position: fixed;
     bottom: 0px;
     right: 45px;
     margin-bottom: 24px ;
     font-weight: 700;  /*pone gruesa la letra*/
-    font-size: 12px;
+    font-size: 9px;
     border-radius: 6px;  /*tamaño del borde del boton*/
     cursor: pointer;
     color: #fff;
@@ -382,7 +382,7 @@ iframe{
 }
 
 .form__cotainer{
-    max-width: 270px;
+    max-width: 200px;
     padding: 10px;
     font-size: .8rem;
     color: #000;
@@ -390,17 +390,17 @@ iframe{
 }
 
 .form__cotainer textarea{
-    width: 85%;
-    padding: 15px;
+    width: 80%;
+    padding: 10px;
     margin: 5px;
     border: none;
     background: #e7e1e1;
     resize: none;
-    min-height: 150px;
+    min-height: 100px;
 }
 
 .form__cotainer h2{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
@@ -411,7 +411,7 @@ iframe{
 
 .form__cotainer .btn{
     width: 90%;
-    padding: 16px 20px;
+    padding: 11px 15px;
     margin-bottom: 10px;
     border: none;
     border-radius: 6px;
@@ -539,10 +539,11 @@ iframe{
     }
     
     .nuevo img{                   /* listo*/                  
-        width: 63%;
-        height: auto ; 
-        padding: 3px;
+        width: 30%;
+        height: 4%; 
+        
     }
+    
 
     .registro {
         font-size: 12px;
@@ -733,11 +734,10 @@ iframe{
 }
 
 .nuevo img{                   /* listo*/                  
-    width: 65%;
-    height: auto ; 
-    padding: 3px;
+    width: 30%;
+    height: 4%; 
+    
 }
-
 
 .registro{                     /* listo*/                  
 
@@ -816,7 +816,7 @@ iframe{
 }
 
 .header {
-    height: 55px;
+    height: 57px;
     width: 103%;
 }
 
@@ -1015,7 +1015,7 @@ iframe{
 
    
     .nav-menu-link {
-        padding: 25px;
+        padding: 15px;
     }
     
     .header {
@@ -1041,8 +1041,8 @@ iframe{
     
     iframe{
 
-        height:270px;
-        width:110%;
+        height:280px;
+        width: 110%;
     }
 
 
@@ -1103,7 +1103,7 @@ iframe{
     }
 
     .fondonuevo{
-        width: 110%; 
+        width: 108%; 
     }
 
     .nuevo{                       /* listo*/                   

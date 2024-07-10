@@ -69,7 +69,8 @@
     }
 
     .carrito{
-      background-color: #f7e1d9;
+        margin-right: 23px;
+        margin-top: 2px;
     }
      
     .carrito img{
@@ -104,7 +105,8 @@
     }
 
     .carrito{
-      background-color: #f7e1d9;
+        margin-right: 25px;
+        margin-top: 3px;
     }
      
     .carrito img{
@@ -121,12 +123,12 @@
     }
      
     .mediodepago{
-        margin-right: 7px;
-        margin-left: 13px;
+        margin-right: 15px;
+        margin-left: 10px;
     }
 
     .targeta{
-        margin-top: 0;
+        margin-top: 5;
     }
      
     .targeta img{
@@ -138,8 +140,8 @@
     }
 
     .carrito{
-      background-color: #f7e1d9;
-      margin: 0%;
+      margin-right: 35px;
+      margin-top: 3px;
     }
      
     .carrito img{
@@ -148,3 +150,37 @@
     }
 }
 
+@media (min-width: 1201px) and (max-width:1400px){   /* escrirorio monitor grande listo*/ 
+
+    .ecavesadocompra{
+        width: 110%;
+        height: 100px;
+    }
+     
+    .mediodepago{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .targeta{
+        margin-top: 7px;
+    }
+     
+    .targeta img{
+     
+        width: 43%;
+        height: 70%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .carrito{
+      margin-right: 35px;
+      margin-top: 10px;
+    }
+     
+    .carrito img{
+        width: 70px;
+    
+    }  
+}
