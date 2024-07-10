@@ -1,0 +1,54 @@
+*{ font-size: 16px;
+  margin: 0;  
+  padding: 0;
+
+}
+
+/*Carrusel*/
+.img_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasos-registro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.boton-tickets {
+    background-color: rgb(54, 170, 54);
+    
+}
+
+.tarjeta {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    background-color: white;
+    text-align: justify;
+    padding: 30px;
+    margin: 20px;
+    
+}
+.tarjeta img {
+    height: 390px;
+    width: 390px;
+}
+
+.formulario-contenedor {
+    display: flex;
+    background-color: #2b689b;
+    padding: 30px;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin: 30px;
+}
