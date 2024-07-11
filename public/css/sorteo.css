@@ -1,6 +1,7 @@
-*{ font-size: 16px;
-  margin: 0;  
-  padding: 0;
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -11,37 +12,66 @@
     align-items: center;
 }
 
+.misma_linea {
+    display: inline;
+    font-size: 19px;
+    margin: 9px;
+}
+
+.marimar {
+    font-size: 20px;
+    margin: 9px;
+}
+
+.premios {
+    font-size: 20px;
+    margin: 9px;
+}
+
 .pasos-registro {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    background-color: darkkhaki;
     max-width: 1200px;
-    margin: 0 auto; 
-    padding: 10px;
+    margin: 0 auto;
+    padding: 3px;
+
 }
+
+.pasos-registro p {
+    font-size: 12px;
+}
+
 
 .boton-tickets {
     background-color: rgb(54, 170, 54);
-    
+
 }
 
 .tarjeta {
     flex: 1 1 100%;
     box-sizing: border-box;
-    text-align: center;
+    text-align: center !important;
+    /* Se agregó !important porque no tomaba en cuenta el center*/
     border: solid 1px black;
     border-radius: 10px;
     box-shadow: 0 0 10px;
     background-color: white;
-    text-align: justify;
     padding: 30px;
     margin: 20px;
-    
+
 }
+
+.tarjeta p {
+    text-align: justify;
+}
+
 .tarjeta img {
     height: 390px;
     width: 390px;
+
 }
+
 
 .formulario-contenedor {
     display: flex;
@@ -51,4 +81,88 @@
     border-radius: 10px;
     box-shadow: 0 0 10px;
     margin: 30px;
+}
+
+/* Separación de 2% inferior (abajo) entre elementos del formulario */
+.margin_2-bottom {
+    margin: 0% 0% 2% 0%;
+}
+
+
+/* Estilo tabla */
+table {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.encabezados {
+    text-align: center;
+    font-size: 10px;
+
+}
+
+th,
+td {
+    border: 1px solid !important;
+    /*Important obliga a aplicar el estilo*/
+    padding: 5px;
+}
+
+.omision_borde {
+    border: none !important;
+}
+
+/*Botones e iconos*/
+.centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Decoración del botón */
+button {
+    border-radius: 5px !important;
+    border: 0px;
+    padding: 5px;
+    margin: 10px !important;
+
+}
+
+/* Iconos y links*/
+.link-iconos {
+    margin-left: 50%;
+}
+
+.bi-clipboard-check-fill {
+    font-size: 15px;
+}
+
+.bi-gift-fill {
+    font-size: 15px;
+}
+
+.bi-person-fill {
+    font-size: 15px;
+}
+
+
+@media(min-width: 801px) {
+    .misma_linea {
+        font-size: 25px;
+    }
+
+    .marimar {
+        font-size: 30px;
+
+    }
+
+    .pasos-registro p {
+        font-size: 15px;
+    }
+
+    .premios {
+        font-size: 25px;
+    }
 }
