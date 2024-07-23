@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="../public/css/home.css">
+        
+    <link rel="stylesheet" href="../public/css/carrito.css">
+
+    <script defer src="../public/java/nav.js"></script>
+   
+    <script defer src="../public/java/chatdeemergencia.js"></script>
+   
+    <link rel="shortcut icon" href="../public/imagenes/carrito verde icon" type="image/x-icon"><!--le inserto una pequeña imagen a la etiqueta />-->
+</head>
+<body>
+  
+    <header class="header">
+
+        <nav class="nav">
+          <a href="#" class="logo nav-link">Home</a>
+          <button class="nav-toggle" aria-label="Abrir menú">    <!--la amurguesa va en midia cueri-->
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="promociones.ejs" class="nav-menu-link nav-link">Promociones</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="productos-nuevos.ejs" class="nav-menu-link nav-link">Productos</a>
+            </li>
+          </ul>
+        </nav>
+          
+   </header>
+    
+    <header class="ecavesadocompra">
+    
+        <div class="mediodepago">
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/master.png" >
+          </div>
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/naranjatarjeta.jpeg" >
+          </div>
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/visa.png" >
+          </div>
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/mercadopago.png" >
+          </div>
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/plata.png" >
+          </div>
+    
+         
+         <button class="carrito">
+            <img src="public/imagenes/carrito/carrito-de-compras.png">
+         </button>
+    
+        </div>
+    
+    </header> 
+    
+    
+      <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
+        <div class="chat__popup" id="myfrom">
+        <form action="#" class="form__cotainer">
+          <h2>Chatea con nosotros</h2>
+          <label for="msg"><b>Mensaje</b></label>
+          <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+          <button type="reset"  class="btn" class="cancel" onclick="closeForm()">borrar</button>
+        </form>
+      </div>
+      
+      <main>
+        <h2>Productos</h2>
+        <ul>
+            <li>
+            <% productos.forEach(producto => { %>
+              
+                    <div><%= producto.marca %></div>
+                    <div><%= producto.descripcion %></div>
+                    <div><%= producto.precio %></div>
+                    
+                    <div class="form-container">
+                      <a href="/create">Creación de un nuevo producto</a>
+                   </div>
+                
+            </li>
+        <%  }) %>
+        </ul>
+    </main>
+
+    
+</body>
+</html>

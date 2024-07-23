@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+}
+
+.nuevos{                       /* listo*/                   
+    background-color:#ffe6b0;
+    font-family:Georgia;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 10px;
+    width: 20%;
+    height: auto ;
+    margin-left: 17px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.nuevos p{                     /* listo*/                   
+    text-align: center;
+    font-style:oblique;
+    color: rgb(8, 4, 0);
+    font-size: 8px;
+
+}
+
+.nuevos h1{                     /* listo*/                   
+    text-align: center;
+    font-style:oblique;
+    background-color:crimson;
+    block-size: 30px;
+    color:oldlace;
+    font-size: 18px;
+
+}
+
+.nuevos img{                   /* listo*/                  
+    width: 45%;
+    height: auto ; 
+    padding: 3px;
+}

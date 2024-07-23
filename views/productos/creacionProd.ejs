@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+<body>
+    <form action="/create" method="post">
+        <div>
+            <label for="marca">Marca: </label>
+            <input type="text" name="marca" id="marca" placeholder="Ingresa la Marca">
+        </div>
+        <br>
+
+        <div>
+            <label for="descripcion">descripcion: </label>
+            <input type="text" name="descripcion" id="descripcion" placeholder="Descrive el poducto">
+        </div>
+        <br>
+
+        <div>
+            <label for="precio">Precio: </label>
+            <input type="number" name="precio" id="precio" placeholder="Ingresa el Precio">
+        </div>
+        <br>
+        <div>
+            <button type="submit" value="Guardar Producto">Crear nuevo producto</button>
+        </div>
+    </form>
+    <div>
+        <a href="/">Volver</a>
+    </div>
+</body>
+</html>

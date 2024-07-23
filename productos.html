@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/imagenes/carrito verde icon.ico" type="image/x-icon"><!--le inserto una pequeña imagen a la etiqueta />-->
+
+    <link rel="stylesheet" href="public/css/home.css">
+        
+    <link rel="stylesheet" href="public/css/carrito.css">
+
+    <script defer src="public/java/nav.js"></script>
+       
+    <script defer src="public/java/chatdeemergencia.js"></script>
+
+    <link rel="stylesheet" href="public/css/promociones.css">
+
+    <title>Marimar</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="nav">
+          <a href="home.html" class="logo nav-link">Home</a>
+          <button class="nav-toggle" aria-label="Abrir menú">    <!--la amurguesa va en midia cueri-->
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="promociones.html" class="nav-menu-link nav-link">Promociones</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="productos.html" class="nav-menu-link nav-link">Productos</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link"> </a>
+            </li>
+
+          </ul>
+        </nav>
+          
+    </header>
+<body>
+    
+<main>
+    
+    <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
+    <div class="chat__popup" id="myfrom">
+      <form action="#" class="form__cotainer">
+        <h2>Chatea con nosotros</h2>
+        <label for="msg"><b>Mensaje</b></label>
+        <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+      </form>
+    </div>
+
+    <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="public/imagenes/nuevo-productos/shampoo2en1.jpeg">
+        <p>Todo a en un solo envase. A solo $ 3.500</p>
+      </div>
+  
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="public/imagenes/nuevo-productos/cafe-en-sobre.jpeg">
+        <p>Practicos sobres individuales de cafe, para darte un gusto. El pack trae 20 sobres.Por tan solo $ 6.000</p>
+      </div>
+
+
+      <div class="nuevo">
+        <h1><b>Nuevo<b></h1>
+        <img src="public/imagenes/nuevo-productos/limpiadordino.jpeg">
+        <p>Limpia con facilidad con este novedoso envase. A solo $ 3.200</p>
+      </div>
+  
+
+</main>
+
+
+<footer class="footer-servicio-social">
+  
+    <div>
+      <p class="titulofooter">SÍGUENOS EN NUESTRAS REDES SOCIALES</p> 
+      <ul class="info">
+        <li class="iten"><a href="https://www.facebook.com/?locale=es_LA" title="Facebook" target="_blank"><img src="public/imagenes/facebook_logo.png"></a></li> 
+        <li class="iten"><a href="https://www.youtube.com/user/GarnierMex" title="instagram" target="_blank"><img src="public/imagenes/instagram.png"></a></li> 
+        <li class="iten"><a href="https://twitter.com/garniermx" title="Twitter" target="_blank"><img src="public/imagenes/twiter.png"></a></li> 
+        <li class="iten"><a href="1160873024"><img src="public/imagenes/whatsapp.png"> </a></li>
+      </ul>
+
+      <div>
+        <ul>
+          <li class="iten">Auntora: Daniela Ponce , Diana Ayala , Cami Castellanos y Agustina Barrios </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+</body>
+</html>

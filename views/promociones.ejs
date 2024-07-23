@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/imagenes/carrito verde icon.ico" type="image/x-icon"><!--le inserto una pequeña imagen a la etiqueta />-->
+
+    <link rel="stylesheet" href="public/css/home.css">
+        
+    <link rel="stylesheet" href="public/css/carrito.css">
+
+    <link rel="stylesheet" href="public/css/promociones.css">
+
+
+    <script defer src="public/java/nav.js"></script>
+       
+    <script defer src="public/java/chatdeemergencia.js"></script>
+
+    <script defer src="public/java/carrito.js"></script>
+ 
+    <title>Marimar</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="nav">
+          <a href="home.html" class="logo nav-link">Home</a>
+          <button class="nav-toggle" aria-label="Abrir menú">    <!--la amurguesa va en midia cueri-->
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="promociones.html" class="nav-menu-link nav-link">Promociones</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="productos.html" class="nav-menu-link nav-link">Productos</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link"> </a>
+            </li>
+
+          </ul>
+        </nav>
+          
+    </header>
+    
+    <header class="ecavesadocompra">
+    
+        <div class="mediodepago">
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/master.png" >
+          </div>
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/naranjatarjeta.jpeg" >
+          </div>
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/visa.png" >
+          </div>
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/mercadopago.png" >
+          </div>
+    
+          <div class="targeta">
+            <img src="public/imagenes/carrito/plata.png" >
+          </div>
+    
+         
+         <button class="carrito">
+          <img src="public/imagenes/carrito/carrito-de-compras.ico">
+         </button>
+            
+        </div>
+    
+    </header>
+    
+    <main> 
+    
+      <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
+      <div class="chat__popup" id="myfrom">
+        <form action="#" class="form__cotainer">
+          <h2>Chatea con nosotros</h2>
+          <label for="msg"><b>Mensaje</b></label>
+          <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+        </form>
+      </div>
+     
+      <h1 class="tituloprincipal"> ¡ Más Promos !</h1>
+
+     
+      <div class="textofrase">
+         
+        <p><b>Aprobeche estos precios increibles , no los encontraras en otro sitio</b> </p>
+
+      </div>
+
+                                       <!--sorteo formulario -->
+
+     <iframe class="sorteo" src="http://127.0.0.1:5500/Seccion-Sorteo/sorteo.html"></iframe>
+     
+                          <!-- secion de productos limpieza -->
+          
+     <details>
+        <summary class="desplegablelimpieza"> Los produtos de limpieza </summary>
+        <section class="fondodesplegablelimpiza"> 
+                 
+                
+        
+                <div class="promolinpieza">
+                  <h1><b> Promo 1 <b></h1> 
+                  <img src="public/imagenes/lavandinaen_gel.jpeg">
+                  <img src="public/imagenes/rollodecocina.jpeg">
+                  <p>Trae 2 paquetes de papel cocina, incluido una lavandina en gel.
+                     Con el increible precio $ 6.000 
+                  </p>
+                </div>
+        
+                <div  class="promolinpieza">
+                 <h1><b> Promo 2 <b></h1>
+                 <img src="public/imagenes/limpiador-pisos.jpeg">
+                 <img src="public/imagenes/mopa.jpeg">
+                 <p>Trae un bidon de cif con una mopa de regalo. A tansolo $12.000</p>
+               </div>
+        
+               <div  class="promolinpieza">
+                  <h1><b> Promo 3 <b></h1> 
+                  <img src="public/imagenes/jabonpararopa.png">
+                  <p>Super promo, limpiador de pisos,suavisante,jabon para la ropa. A solo $10.500</p>
+               </div>
+        
+               <div  class="promolinpieza">
+                  <h1><b> Promo 4 <b></h1> 
+                  <img src="public/imagenes/detergente.jpeg">
+                  <img src="public/imagenes/esponja.jpg">
+                  <p>Detergente de primera marca,super rendidor con 2 esponjas de regalo. Sorprendente precio a $13.000</p>
+                </div>    
+                
+
+                <div  class="promolinpieza">
+                  <h1><b> Promo 5<b></h1> 
+                  <img src="public/imagenes/trapodepiso.jpg">
+                  <img src="public/imagenes/escobas.jpg">
+                  <p>Trae 4 trapos de piso y una escoba de regalo, el color a elecion. A tansolo $ 5.000</p>
+                </div>
+
+                <div  class="promolinpieza">
+                  <h1><b> Promo 6 <b></h1> 
+                  <img src="public/imagenes/cif-antigrasa.png">
+                  <img src="public/imagenes/trapoMicrofibra.png">
+                  <p>Bidon de 5litros de antigrasa y 3 trapos de microfibra. A solo $ 7.000 </p>
+                </div>
+                
+
+                <div  class="promolinpieza">
+                  <h1><b> Promo 7 <b></h1> 
+                  <img style="height: 80px; width: 80px;" src="public/imagenes/pastillapratoalet.jpeg">
+                  <p>3 a precio de 2. A solo $ 3.500 </p>
+                </div>    
+                  
+
+                <div  class="promolinpieza">
+                  <h1><b> Promo 8 <b></h1> 
+                  <img src="public/imagenes/automatizador.jpeg">
+                  <img src="public/imagenes/potedeperfumehogar.jpeg">
+                  <p>Aromatizante Automático Glade Manzana Y Canela + tres fragancia primavera. A solo a $ 30.000</p>
+                </div>    
+                
+
+                <div  class="promolinpieza">
+                  <h1><b> Promo 9<b></h1> 
+                  <img src="public/imagenes/limpiadordevidrios.jpeg">
+                  <img src="public/imagenes/esponjadelimpiavidrio.jpg">
+                  <p>Pon tus ventanas dradiantes como diamente con este combo. Te llebas un limpiador de veidrio de mistermusculoso y una esponja de limpia vidrio.
+                    A tansolo $ 15.000
+                  </p>
+                </div>
+
+               
+
+
+        </section>
+           
+     </details>
+
+                         <!-- secion de productos igiene -->
+
+     <details>
+      <summary class="desplegableijiene"> Igiene personal </summary>
+      <section class="fondodesplegableijiene">  
+       <div class="promoigiene" >
+         <h1><b> Promo 1 <b></h1> 
+         <img  src="public/imagenes/nuevo-productos/shampoo2en1.jpeg">
+         <img  src="public/imagenes/igienen/velasflotantes.jpeg">
+         <p>Aprovecha este combo, shampoo 2 en 1 y 4 velas flotantes con una rica fragancia. Solo por $ 15.000</p>
+       </div>
+
+       <div class="promoigiene" >
+        <h1><b> Promo 2 <b></h1> 
+        <img  src="public/imagenes/igienen/dentifrico.png">
+        <img  src="public/imagenes/igienen/enjuaquebocal.jpg">
+        <img  src="public/imagenes/igienen/hilo dental.jpeg">
+        <p> Aprobecha esta promo. Cuida tu sonrisa, que no te de pena de sonreir. 
+           Te estas llebando un enjuague bocal + un dentifrico + un hilo dental. Te lo estas llebando a solo $ 13.000</p>
+      </div>
+       
+       <div class="promoigiene">
+         <h1><b> Promo 3 <b></h1>
+         <img  src="public/imagenes/igienen/guantedebaño.jpg">
+         <img  src="public/imagenes/igienen/jabon.png">
+         <p> Te llabas unos guantes de baños + 5 jabones de baño. Tan solo $ 6.000</p>
+       </div>
+    
+      
+      <div class="promoigiene">
+        <h1><b> Promo 4 <b></h1>
+        <img  src="public/imagenes/igienen/toallitasdia.jpeg">
+        <img  src="public/imagenes/igienen/toallitasnocturnas.jpg">
+        <p>Toallitas femininas a todo momento. Suaves y comodas. Las llevas por $ 11.000 </p>
+      </div>
+
+      <div class="promoigiene" >
+        <h1><b> Promo 5 <b></h1> 
+        <img src="public/imagenes/igienen/gillettedemujer.jpg">
+        <p>Gillette de mujer de 24 unidades. Aprobechala, está a solo $ 7.000</p>
+      </div>
+      
+      <div class="promoigiene" >
+        <h1><b> Promo 5 <b></h1> 
+        <img src="public/imagenes/igienen/gillettedehombre.jpg">
+        <img src="public/imagenes/igienen/cremadeafeitar.jpeg">
+        <p>Gillette de hombre de 12 unidades + una crema de afeitar. A solo $ 10.000</p>
+      </div>
+      
+        </section> 
+     </details>
+
+
+                          <!-- secion de productos almacen -->
+        
+     <details>
+       <summary class="desplegablealma"> Almacen </summary>
+       <section class="fondodesplegablealma">  
+        <div class="promoalmacen" >
+          <h1><b> Promo 1 <b></h1> 
+          <img  src="public/imagenes/yerba.jpeg">
+          <img  src="public/imagenes/yerba.jpeg">
+          <p>Llebando 2 paquetes de 1,2kg de la marca "Union". A tansolo $ 4.000</p>
+        </div>
+        
+        <div class="promoalmacen">
+          <h1><b> Promo 2 <b></h1>
+          <img  src="public/imagenes/arroz.png">
+          <img  src="public/imagenes/polenta.png">
+          <p>Arroz de primera marca, acompañado con un paquete de polenta.Con un precio de $3.000</p>
+        </div>
+        
+        <div class="promoalmacen">
+          <h1><b> Promo 3 <b></h1> 
+          <img src="public/imagenes/leche.jpeg">
+          <img src="public/imagenes/leche.jpeg">
+          <img src="public/imagenes/leche.jpeg">
+          <p>3 por 2 !!.Yebas 3 pagas 2. A solo $4.000</p>
+        </div>
+        
+        <div class="promoalmacen">
+          <h1><b> Promo 4 <b></h1> 
+          <img  src="public/imagenes/fideos.jpg">
+          <img  src="public/imagenes/lata-de-tomate.jpeg">
+          <p>Llebas 2 paquetes de fideos con 2 latas de tomate picados. A solo $8.000</p>
+        </div>
+        
+
+        <div class="promoalmacen">
+          <h1><b> Promo 5 <b></h1> 
+          <img src="">
+          <img src="">
+          <img src="">
+          <p></p>
+        </div>
+        
+        <div class="promoalmacen">
+          <h1><b> Promo 6 <b></h1> 
+          <img  src="">
+          <img  src="">
+          <p></p>
+        </div>
+        
+
+        </section> 
+      </details>
+
+     
+      <iframe src="http://127.0.0.1:5500/carruzel%20videos.html" frameborder="0" ></iframe>
+
+    <main>
+
+      <footer class="footer-servicio-social">
+  
+        <div>
+          <p class="titulofooter">SÍGUENOS EN NUESTRAS REDES SOCIALES</p> 
+          <ul class="info">
+            <li class="iten"><a href="https://www.facebook.com/?locale=es_LA" title="Facebook" target="_blank"><img src="public/imagenes/facebook_logo.png"></a></li> 
+            <li class="iten"><a href="https://www.youtube.com/user/GarnierMex" title="instagram" target="_blank"><img src="public/imagenes/instagram.png"></a></li> 
+            <li class="iten"><a href="https://twitter.com/garniermx" title="Twitter" target="_blank"><img src="public/imagenes/twiter.png"></a></li> 
+            <li class="iten"><a href="1160873024"><img src="public/imagenes/whatsapp.png"> </a></li>
+          </ul>
+    
+          <div>
+            <ul>
+              <li class="iten">Auntora: Daniela Ponce , Diana Ayala , Cami Castellanos y Agustina Barrios </li>
+            </ul>
+          </div>
+        </div>
+      </footer>  
+</body>
+</html>
