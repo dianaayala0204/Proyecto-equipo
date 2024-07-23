@@ -2,177 +2,6 @@
     margin: 0;
 }
 
-/* INICIA SORTEO */
-* {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-
-}
-
-/*Carrusel*/
-.img_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.misma_linea {
-    display: inline;
-    font-size: 19px;
-    margin: 9px;
-}
-
-.marimar {
-    font-size: 20px;
-    margin: 9px;
-}
-
-.premios {
-    font-size: 20px;
-    margin: 9px;
-}
-
-.pasos-registro {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(147, 247, 160) !important;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3px;
-
-}
-
-.pasos-registro p {
-    font-size: 12px;
-}
-
-
-.boton-tickets {
-    background-color: rgb(54, 170, 54);
-
-}
-
-.tarjeta {
-    flex: 1 1 100%;
-    box-sizing: border-box;
-    text-align: center !important;
-    /* Se agregó !important porque no tomaba en cuenta el center*/
-    border: solid 1px black;
-    border-radius: 10px;
-    box-shadow: 0 0 10px;
-    background-color: white;
-    padding: 30px;
-    margin: 20px;
-
-}
-
-.tarjeta p {
-    text-align: justify;
-}
-
-.tarjeta img {
-    height: 390px;
-    width: 390px;
-
-}
-
-
-.formulario-contenedor {
-    display: flex;
-    background-color: rgb(92, 185, 247) !important;
-    padding: 30px;
-    border: solid 1px black;
-    border-radius: 10px;
-    box-shadow: 0 0 10px;
-    margin: 30px;
-}
-
-/* Separación de 2% inferior (abajo) entre elementos del formulario */
-.margin_2-bottom {
-    margin: 0% 0% 2% 0%;
-}
-
-
-/* Estilo tabla */
-table {
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-}
-
-.encabezados {
-    text-align: center;
-    font-size: 10px;
-    background-color: bisque;
-
-}
-
-th,
-td {
-    border: 1px solid !important;
-    /*Important obliga a aplicar el estilo*/
-    padding: 5px;
-}
-
-.omision_borde {
-    border: none !important;
-}
-
-/*Botones e iconos*/
-.centrado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* Decoración del botón */
-button {
-    border-radius: 5px !important;
-    border: 0px;
-    padding: 5px;
-    margin: 10px !important;
-
-}
-
-/* Iconos y links*/
-.link-iconos {
-    margin-left: 50%;
-}
-
-.bi-clipboard-check-fill {
-    font-size: 15px;
-}
-
-.bi-gift-fill {
-    font-size: 15px;
-}
-
-.bi-person-fill {
-    font-size: 15px;
-}
-
-
-@media(min-width: 801px) {
-    .misma_linea {
-        font-size: 25px;
-    }
-
-    .marimar {
-        font-size: 30px;
-
-    }
-
-    .pasos-registro p {
-        font-size: 15px;
-    }
-
-    .premios {
-        font-size: 25px;
-    }
-}
-/* TERMINA SORTEO*/
 
 .tituloprincipal{
     font-size: xx-large;
@@ -192,7 +21,15 @@ button {
     
 }
 
+/*--sorteo formulario --*/
 
+.sorteo{
+    margin-top: 20px;
+    border: none;
+    width:102%;
+    height: 2610px;
+    margin-bottom: 0px;
+}
 
                                           /* Limpieza*/
 
@@ -386,8 +223,8 @@ iframe{
     
 
     iframe{
-
-        height:250px;
+        margin-top: 10px;
+        height:200px;
         width:102%;
     }
  
@@ -406,6 +243,7 @@ iframe{
 
     .promolinpieza h1 {
         font-size: 18px;
+        margin-bottom: 5px;
     }
 
     .promolinpieza img {
@@ -429,6 +267,7 @@ iframe{
     
     .promoigiene h1{                     /* listo*/                   
         font-size: 20px;
+        margin-bottom: 5px;
     }
     
     .promoigiene img{                   /* listo*/                  
@@ -452,201 +291,364 @@ iframe{
     
     .promoalmacen h1{                     /* listo*/                   
         font-size: 20px;
+        margin-bottom: 5px;
     }
     
     .promoalmacen img{                   /* listo*/                  
         width: 44%; 
         
     }
-  
 
-    .nuevo{                       /* listo*/                   
-        width: 22%;
-        height: auto ;
-        margin-left: 9px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    
-    
-    .nuevo p{                     /* listo*/                   
-        font-size: 9px;
-    
-    }
-    
-    .nuevo h1{                     /* listo*/                   
-        block-size: 35px;
-        font-size: 20px;
-        block-size: 35px;
-    }
-    
-    .nuevo img{                   /* listo*/                  
-        width: 30%;
-        height: 4%; 
-        
-    }
-    
-
-  
 } 
 
 /* Table grande */           
-@media (min-width: 801px) and (max-width:1000px){     /*me falta*/   
+@media (min-width: 801px) and (max-width:1000px){     /*Hecho*/   
   
+    .tituloprincipal{
+        font-size: 45px;
+         margin-top: 20px;
+         margin-bottom: 10px;
+    }
+     
+    .textofrase{
+        font-size: 25px;
+    }
+     
+ 
     iframe{
-
-        height:260px;
+        margin-top: 10px;
+        height:230px;
         width:102%;
     }
 
-.hijos{                       /* listo*/                   
-    margin-left: 20px;
-    width: 21%;
-}
-
-.hijos p{                     /* listo*/                   
-    font-size: 10px;
-}
-
-.hijos h1{                   /* listo*/                   
-    font-size: 19px;
-}
-
-.hijos img{                   /* listo*/                  
-    width: 48%;
-    padding: 1px;
-}
-
-
-.nuevo{                       /* listo*/                   
-    width: 23%;
-    height: auto ;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-
-.nuevo p{                     /* listo*/                   
-    font-size: 10px;
-
-}
-
-.nuevo h1{                     /* listo*/                   
-    block-size: 35px;
-    font-size: 23px;
-}
-
-.nuevo img{                   /* listo*/                  
-    width: 30%;
-    height: 4%; 
     
-}
+  .desplegablelimpieza{
 
+    font-size: 30px;
+
+  }
+  
+    .promolinpieza {
+        margin-left: 4px;
+        margin-right: 4px;
+        padding: 0;
+        width: 32%;
+        margin-top: 12px;
+        margin-bottom: 7px;
+    }
+ 
+    .promolinpieza p {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+ 
+     .promolinpieza h1 {
+        font-size: 20px;
+        margin-bottom: 7px;
+     }
+ 
+    .promolinpieza img {
+         width: 40%;
+    }
+
+
+    .desplegableijiene{
+
+        font-size: 30px;
+    
+    }
+
+ 
+    .promoigiene{                       /* listo*/                   
+         margin-left: 8px;
+         margin-right: 6px;
+         padding: 3;
+         width: 30%;
+         margin-top: 15px;
+         margin-bottom: 5px;
+    }
+     
+     
+    .promoigiene p{                     /* listo*/                   
+        font-size: 13px;
+        margin-bottom: 7px;
+    } 
+    
+     
+    .promoigiene h1{                     /* listo*/                   
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+     
+    .promoigiene img{                   /* listo*/                  
+        width: 40%; 
+         
+    }
+
+    .desplegablealma{
+
+        font-size: 30px;
+    
+    }
+ 
+    .promoalmacen {
+         margin-left: 8px;
+         margin-right: 7px;
+         padding: 3;
+         width: 30%;
+         margin-top: 10px;
+         margin-bottom: 5px;
+     }
+ 
+    .promoalmacen p{                     /* listo*/                   
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+     
+     
+    .promoalmacen h1{                     /* listo*/                   
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+     
+    .promoalmacen img{                   /* listo*/                  
+        width: 45%; 
+         
+     }
+     
 }
 
 /* escritorio */         
-@media (min-width: 1001px) and (max-width:1200px){  /*me falta*/
+@media (min-width: 1001px) and (max-width:1200px){  /*Hecho*/
 
-    iframe{
 
-        height:270px;
-        width:103%;
+    .tituloprincipal{
+        font-size: 50px;
+         margin-top: 20px;
+         margin-bottom: 10px;
     }
+     
+    .textofrase{
+        font-size: 41px;
+    }
+     
+ 
+    iframe{
+        margin-top: 10px;
+        height:210px;
+        width:101%;
+    }
+
     
-.hijos{                       /* listo*/                   
-    width: 22%;
-    margin-left: 20px;
-}
+  .desplegablelimpieza{
 
-.hijos p{                     /* listo*/                   
-    font-size: 16px;
-}
+    font-size: 33px;
 
-.hijos h1{                   /* listo*/                   
-    font-size: 23px;
-}
+  }
+  
+    .promolinpieza {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0;
+        width: 32%;
+        margin-top: 12px;
+        margin-bottom: 7px;
+    }
+ 
+    .promolinpieza p {
+        font-size: 17px;
+        margin-bottom: 9px;
+    }
+ 
+     .promolinpieza h1 {
+        font-size: 25px;
+        margin-bottom: 7px;
+     }
+ 
+    .promolinpieza img {
+        width: 35%;
+    }
 
-.hijos img{                   /* listo*/                  
-    width: 48%;
-    padding: 1px;
-}
 
-.nuevo{                       /* listo*/                   
-    width: 23%;
-    height: auto ;
-    margin-left: 13px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
+    .desplegableijiene{
 
+        font-size: 33px;
+    
+    }
 
-.nuevo p{                     /* listo*/                   
-    font-size: 13px;
-}
+ 
+    .promoigiene{                       /* listo*/                   
+        margin-left: 8px;
+        margin-right: 14px;
+        padding: 4px;
+        width: 30%;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+     
+     
+    .promoigiene p{                     /* listo*/                   
+        font-size: 17px;
+        margin-bottom: 9px;
+    }
+     
+    .promoigiene h1{                     /* listo*/                   
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+     
+    .promoigiene img{                   /* listo*/                  
+        width: 35%; 
+         
+    }
 
-.nuevo h1{                     /* listo*/                   
-    block-size: 45px;
-    font-size: 25px;
-}
+    .desplegablealma{
 
-.nuevo img{                   /* listo*/                  
-    width: 56%;
-    height: auto ; 
-    padding: 3px;
-}
-
+        font-size: 33px;
+    
+    }
+ 
+    .promoalmacen {
+        margin-left: 13px;
+        margin-right: 10px;
+        padding: 3px;
+        width: 30%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+     }
+ 
+     .promoalmacen p{                     /* listo*/                   
+        font-size: 17px;
+        margin-bottom: 9px;
+     
+     }
+     
+     .promoalmacen h1{                     /* listo*/                   
+        font-size: 25px;
+        margin-bottom: 7px;
+     }
+     
+     .promoalmacen img{                   /* listo*/                  
+        width: 45%; 
+         
+     }
+     
+ 
 } 
 
 /* escrirorio monitor grande*/         
 @media (min-width: 1201px) and (max-width:1400px){   /*me falta*/
 
-    iframe{
-
-        height:280px;
-        width: 110%;
-    }
-
-    .hijos{                       /* listo*/                   
-        width: 22%;
-        margin-left: 20px;
-    }
-    
-    .hijos p{                     /* listo*/                   
-        font-size: 20px;
-    }
-    
-    .hijos h1{                   /* listo*/                   
-        font-size: 28px;
-    }
-    
-    .hijos img{                   /* listo*/                  
-        width: 48%;
-        padding: 1px;
-    }
-  
-    .nuevo{                       /* listo*/                   
-        width: 23%;
-        height: auto ;
-        margin-left: 16px;
+ 
+    .tituloprincipal{       /* listo*/ 
+        font-size: 53px;
+        margin-top: 20px;
         margin-bottom: 10px;
+    }
+     
+    .textofrase{                 /* listo*/   
+        font-size: 42px;
+        margin-left: 30px;
+    }
+     
+ 
+    iframe{                     /* listo*/ 
         margin-top: 10px;
-    }
-    
-    
-    .nuevo p{                     /* listo*/                   
-        font-size: 17px;
-    }
-    
-    .nuevo h1{                     /* listo*/                   
-        block-size: 50px;
-        font-size: 30px;
-    }
-    
-    .nuevo img{                   /* listo*/                  
-        width: 58%;
-        height: auto ; 
-        padding: 3px;
+        height:210px;
+        width:110%;
     }
 
+    
+  .desplegablelimpieza{    
+
+    font-size: 35px;
+    margin-left: 5px;
+  }
+  
+    .promolinpieza {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0;
+        width: 32%;
+        margin-top: 12px;
+        margin-bottom: 7px;
+    }
+ 
+    .promolinpieza p {
+        font-size: 17px;
+        margin-bottom: 9px;
+    }
+ 
+     .promolinpieza h1 {
+        font-size: 25px;
+        margin-bottom: 7px;
+     }
+ 
+    .promolinpieza img {
+        width: 35%;
+    }
+
+
+    .desplegableijiene{
+       font-size: 35px;
+       margin-left: 5px;
+    }
+
+ 
+    .promoigiene{                       /* listo*/                   
+        margin-left: 8px;
+        margin-right: 14px;
+        padding: 4px;
+        width: 30%;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+     
+     
+    .promoigiene p{                     /* listo*/                   
+        font-size: 17px;
+        margin-bottom: 9px;
+    }
+     
+    .promoigiene h1{                     /* listo*/                   
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+     
+    .promoigiene img{                   /* listo*/                  
+        width: 35%; 
+         
+    }
+
+    .desplegablealma{
+
+       font-size: 35px;
+       margin-left: 5px;
+    
+    }
+ 
+    .promoalmacen {
+        margin-left: 13px;
+        margin-right: 10px;
+        padding: 3px;
+        width: 30%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+     }
+ 
+     .promoalmacen p{                     /* listo*/                   
+        font-size: 17px;
+        margin-bottom: 9px;
+     
+     }
+     
+     .promoalmacen h1{                     /* listo*/                   
+        font-size: 25px;
+        margin-bottom: 7px;
+     }
+     
+     .promoalmacen img{                   /* listo*/                  
+        width: 45%; 
+         
+     }
 } 

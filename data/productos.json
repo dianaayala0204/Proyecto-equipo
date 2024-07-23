@@ -1,0 +1,32 @@
+[
+    {
+     "id": 1,
+     "marca": "Ariel",
+     "descricion": "detergente de 1,25",
+     "precio": 1200
+    },
+    {
+     "id": 2,
+     "marca": "MisterMusculo",
+     "descripcion": "antigrasa",
+     "precio": 2000
+    },
+    {
+     "id": 3,
+     "marca": "Lavandina",
+     "descripcion": "Lavandina de 5 litros",
+     "precio": 5000
+    },
+    {
+     "id": 4,
+     "marca": "Ford",
+     "descripcion": "Explorer",
+     "precio": 40000000
+    },
+    {
+     "id": 5,
+     "marca": "Olive",
+     "descricion": "aceite de oliva",
+     "precio": "1500"
+    }
+]

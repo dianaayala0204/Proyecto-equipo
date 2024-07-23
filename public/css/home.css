@@ -139,6 +139,26 @@ main{                      /*listo*/
    font-size: 15px;
 }
 
+.saludo{
+  text-align: center;
+  background-color: #cef7f7;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+.saludo h2{
+    font-size: 23px;
+    color: #0769e9;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.saludo label{
+    font-size: 16px;
+}
+
+
 iframe{
 
     height:250px;
@@ -355,7 +375,7 @@ iframe{
 
 /* chat de emergensia*/
 .open-botton{
-    width: 150px;
+    width: 160px;
     padding: 5px 7px;
     position: fixed;
     bottom: 0px;
@@ -382,7 +402,7 @@ iframe{
 }
 
 .form__cotainer{
-    max-width: 200px;
+    max-width: 220px;
     padding: 10px;
     font-size: .8rem;
     color: #000;
@@ -390,7 +410,7 @@ iframe{
 }
 
 .form__cotainer textarea{
-    width: 80%;
+    width: 95%;
     padding: 10px;
     margin: 5px;
     border: none;
@@ -410,7 +430,7 @@ iframe{
 }
 
 .form__cotainer .btn{
-    width: 90%;
+    width: 95%;
     padding: 11px 15px;
     margin-bottom: 10px;
     border: none;
@@ -455,6 +475,21 @@ iframe{
     .bienvenida p {
         font-size: 18px;
     }
+
+    .saludo{
+      
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+    
+    .saludo h2{
+        font-size: 21px;
+    }
+      
+    .saludo label{
+        font-size: 16px;
+    }
+      
 
     iframe{
 
@@ -600,15 +635,12 @@ iframe{
    }
 
   .form__cotainer textarea{
-    width: 85%;
+    width: 93%;
   }
 
   .form__cotainer .btn{
-    width: 90%;
+    width: 95%;
   }
-
-
-
   
 }
 
@@ -639,6 +671,21 @@ iframe{
 .bienvenida p{             /* listo*/                
    font-size: 20px;
 }
+
+.saludo{
+      
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+.saludo h2{
+    font-size: 24px;
+}
+  
+.saludo label{
+    font-size: 18px;
+}
+
 
 iframe{
 
@@ -785,12 +832,16 @@ iframe{
     right: 58px;
    }
 
+  .form__cotainer{
+    max-width: 250px;
+  }
+
 
   .form__cotainer textarea{
-    width: 84%;
+    width: 96%;
    }
   .form__cotainer .btn{
-    width: 86%;
+    width: 97%;
 }
 
   /*Tablet grande listo*/
@@ -834,6 +885,21 @@ iframe{
 .bienvenida p{             /* listo*/                
    font-size: 30px;
 }
+
+.saludo{ 
+    font-size: 22px;
+    margin-bottom: 6px;
+
+}
+
+.saludo h2{
+    font-size: 35px;
+}
+  
+.saludo label{
+    font-size: 25px;
+}
+
 
 iframe{
 
@@ -986,13 +1052,17 @@ iframe{
     right: 85px;
 }
 
+.form__cotainer{
+    max-width: 270px;
+    font-size: 17px;
+}
 
 .form__cotainer textarea{
-    width: 84%;
+    width: 95%;
 }
 
 .form__cotainer .btn{
-    width: 86%;
+    width: 95%;
 }
 
 
@@ -1037,6 +1107,20 @@ iframe{
     
     .bienvenida p{             /* listo*/                
        font-size: 35px;
+    }
+
+    .saludo{
+        width: 110%;
+        font-size: 22px;
+        margin-bottom: 6px;
+      }
+    
+    .saludo h2{
+        font-size: 35px;
+    }
+      
+    .saludo label{
+        font-size: 25px;
     }
     
     iframe{
@@ -1141,7 +1225,6 @@ iframe{
         font-size: 42px;
         margin-bottom:15px ;
     }
-    
    
     
     .boton{                        /* listo*/
@@ -1173,6 +1256,10 @@ iframe{
      padding-bottom: 10px ;
   }
 
+  .footer-servicio-social{
+    width: 110% ;
+ }
+
    /* chat de emergensia*/    /*listo*/
 .open-botton{
     right: 140px;
@@ -1187,12 +1274,13 @@ iframe{
 .form__cotainer {
     max-width: 300px;
     padding: 10px;
-    font-size: 17px;
+    font-size: 19px;
  
 }
 
 
 .form__cotainer textarea{
+    
     width: 96%;
 }
 
