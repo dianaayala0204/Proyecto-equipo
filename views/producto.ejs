@@ -92,9 +92,9 @@
               <div><%= producto.descripcion %></div>
               <div><%= producto.precio %></div>
 
-              <!-- <div class="form-container">
+              <div class="form-container">
                 <a href="/<%=productos.id%>/edit">Modificar</a>
-              </div> -->
+              </div> 
           
             </li>
            <%  }) %>
@@ -108,10 +108,7 @@
       </div>
     
 
-      <iframe src="productos-nuevos.ejs" frameborder="0"></iframe>
-
-    
-
+      <%- include('../views/productos-nuevos') %>
     
 </body>
 </html>

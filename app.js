@@ -4,8 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+
 
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
@@ -13,6 +12,8 @@ app.use(methodOverride('_method'));
 const routerProducto = require('./router/productoRouter');
 app.use("/", routerProducto);
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
