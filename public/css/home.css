@@ -438,7 +438,7 @@ iframe{
     cursor: pointer;
     color: #fff;
     font-weight: 700;
-    background-color: #04aa0c;
+    background-color: #3ae23a;
 }
 
 .form__cotainer{
@@ -446,7 +446,7 @@ iframe{
 }
 
 .form__cotainer .cancel{
-    background-color: #e40404;
+    background-color: #e40505;
 }
 /* mobay contenido listo   /*                                              /*https://getbootstrap.com/*/
 
