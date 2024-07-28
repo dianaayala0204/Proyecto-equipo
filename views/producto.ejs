@@ -6,22 +6,22 @@
     <title>Home</title>
     <link rel="stylesheet" href="/css/styles.css">
 
-    <link rel="stylesheet" href="../public/css/home.css">
+    <link rel="stylesheet" href="/css/home.css">
         
-    <link rel="stylesheet" href="../public/css/carrito.css">
+    <link rel="stylesheet" href="/css/carrito.css">
 
-    <script defer src="../public/java/nav.js"></script>
+    <script defer src="/javascrip/nav.js"></script>
    
-    <script defer src="../public/java/chatdeemergencia.js"></script>
+    <script defer src="/javascrip/chatdeemergencia.js"></script>
    
-    <link rel="shortcut icon" href="../public/imagenes/carrito verde icon" type="image/x-icon"><!--le inserto una pequeña imagen a la etiqueta />-->
+    <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon"><!--le inserto una pequeña imagen a la etiqueta />-->
 </head>
 <body>
   
     <header class="header">
 
         <nav class="nav">
-          <a href="#" class="logo nav-link">Home</a>
+          <a href="home.ejs" class="logo nav-link">Home</a>
           <button class="nav-toggle" aria-label="Abrir menú">    <!--la amurguesa va en midia cueri-->
             <i class="fa fa-bars"></i>
           </button>
@@ -42,28 +42,28 @@
         <div class="mediodepago">
     
           <div class="targeta">
-            <img src="public/imagenes/carrito/master.png" >
+            <img src="/imagenes/carrito/master.png" >
           </div>
     
           <div class="targeta">
-            <img src="public/imagenes/carrito/naranjatarjeta.jpeg" >
+            <img src="/imagenes/carrito/naranjatarjeta.jpeg" >
           </div>
     
           <div class="targeta">
-            <img src="public/imagenes/carrito/visa.png" >
+            <img src="/imagenes/carrito/visa.png" >
           </div>
     
           <div class="targeta">
-            <img src="public/imagenes/carrito/mercadopago.png" >
+            <img src="/imagenes/carrito/mercadopago.png" >
           </div>
     
           <div class="targeta">
-            <img src="public/imagenes/carrito/plata.png" >
+            <img src="/imagenes/carrito/plata.png" >
           </div>
     
          
          <button class="carrito">
-            <img src="public/imagenes/carrito/carrito-de-compras.png">
+            <img src="/imagenes/carrito/carrito-de-compras.png">
          </button>
     
         </div>
@@ -84,22 +84,33 @@
       
       <main>
         <h2>Productos</h2>
-        <ul>
+       <ul>
             <li>
-            <% productos.forEach(producto => { %>
+              <% productos.forEach(producto => { %>
               
-                    <div><%= producto.marca %></div>
-                    <div><%= producto.descripcion %></div>
-                    <div><%= producto.precio %></div>
-                    
-                    <div class="form-container">
-                      <a href="/create">Creación de un nuevo producto</a>
-                   </div>
-                
+              <div><%= producto.marca %></div>
+              <div><%= producto.descripcion %></div>
+              <div><%= producto.precio %></div>
+
+              <!-- <div class="form-container">
+                <a href="/<%=productos.id%>/edit">Modificar</a>
+              </div> -->
+          
             </li>
-        <%  }) %>
-        </ul>
-    </main>
+           <%  }) %>
+       </ul>
+      </main>
+
+     <br>
+                  
+      <div class="form-container">
+        <a href="/create">Creación de un nuevo producto</a>
+      </div>
+    
+
+      <iframe src="productos-nuevos.ejs" frameborder="0"></iframe>
+
+    
 
     
 </body>

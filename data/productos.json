@@ -1,32 +1,50 @@
 [
-    {
-     "id": 1,
-     "marca": "Ariel",
-     "descricion": "detergente de 1,25",
-     "precio": 1200
-    },
-    {
-     "id": 2,
-     "marca": "MisterMusculo",
-     "descripcion": "antigrasa",
-     "precio": 2000
-    },
-    {
-     "id": 3,
-     "marca": "Lavandina",
-     "descripcion": "Lavandina de 5 litros",
-     "precio": 5000
-    },
-    {
-     "id": 4,
-     "marca": "Ford",
-     "descripcion": "Explorer",
-     "precio": 40000000
-    },
-    {
-     "id": 5,
-     "marca": "Olive",
-     "descricion": "aceite de oliva",
-     "precio": "1500"
-    }
+ {
+  "id": 1,
+  "marca": "Ariel",
+  "descripcion": "detergente de 1,25",
+  "precio": 1200
+ },
+ {
+  "id": 2,
+  "marca": "MisterMusculo",
+  "descripcion": "antigrasa",
+  "precio": 2000
+ },
+ {
+  "id": 3,
+  "marca": "Lavandina",
+  "descripcion": "Lavandina de 5 litros",
+  "precio": 5000
+ },
+ {
+  "id": 4,
+  "marca": "Ford",
+  "descripcion": "Explorer",
+  "precio": 40000000
+ },
+ {
+  "id": 5,
+  "marca": "Olive",
+  "descripcion": "aceite de oliva",
+  "precio": "1500"
+ },
+ {
+  "id": 6,
+  "marca": "abana",
+  "descripcion": "yerba",
+  "precio": "4000"
+ },
+ {
+  "id": 7,
+  "marca": "Danonito",
+  "descripcion": "Yogur para niños, favorece su crecimiento ",
+  "precio": "2500"
+ },
+ {
+  "id": 8,
+  "marca": "loa",
+  "descripcion": "yi",
+  "precio": "4"
+ }
 ]
