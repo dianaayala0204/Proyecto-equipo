@@ -1,14 +1,13 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Producto</title>
+    <title>Editar Producto </title>
 </head>
 <body>
     <h1>Editar Producto</h1>
-    <form action="/<%=producto.id%>?_method=PUT" method="post">
-        <input type="hidden" name="_method" value="PUT"> 
+    <form action="/<%=producto.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
         <div>
             <label for="marca">Marca: </label>
             <input type="text" name="marca" id="marca" value="<%=producto.marca%>" required>
@@ -27,8 +26,17 @@
         </div>
         <br>
         <div>
-            <button type="submit">Actualizar Producto</button>
+            <button type="submit" value="Actualizar Producto">Actualizar producto</button>
+        </div>
+        <br>
+        <div>
+            <label for="imagen">Imagen: </label>
+            <input type="file" name="imagen" id="imagen" placeholder="Carga la imagen ">
+        </div>
+        <div>
+            <button type="submit" value="Actualizar Producto">Actualizar imagen</button>
         </div>
     </form>
+    
 </body>
-</html> -->
+</html>

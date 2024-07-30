@@ -1,117 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="stylesheet" href="/css/home.css">
-        
-    <link rel="stylesheet" href="/css/carrito.css">
+  <link rel="stylesheet" href="css/home.css">
 
-    <script defer src="/javascrip/nav.js"></script>
-   
-    <script defer src="/javascrip/chatdeemergencia.js"></script>
-   
-    <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon"><!--le inserto una pequeña imagen a la etiqueta />-->
+  <link rel="stylesheet" href="css/carrito.css">
+
+  <script defer src="javascrip/nav.js"></script>
+
+  <script defer src="javascrip/chatdeemergencia.js"></script>
+
+  <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon">
+  <!--le inserto una pequeña imagen a la etiqueta />-->
 </head>
+
 <body>
-  
-    <header class="header">
 
-        <nav class="nav">
-          <a href="home.ejs" class="logo nav-link">Home</a>
-          <button class="nav-toggle" aria-label="Abrir menú">    <!--la amurguesa va en midia cueri-->
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="promociones.ejs" class="nav-menu-link nav-link">Promociones</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="productos-nuevos.ejs" class="nav-menu-link nav-link">Productos</a>
-            </li>
-          </ul>
-        </nav>
-          
-   </header>
-    
-    <header class="ecavesadocompra">
-    
-        <div class="mediodepago">
-    
-          <div class="targeta">
-            <img src="/imagenes/carrito/master.png" >
-          </div>
-    
-          <div class="targeta">
-            <img src="/imagenes/carrito/naranjatarjeta.jpeg" >
-          </div>
-    
-          <div class="targeta">
-            <img src="/imagenes/carrito/visa.png" >
-          </div>
-    
-          <div class="targeta">
-            <img src="/imagenes/carrito/mercadopago.png" >
-          </div>
-    
-          <div class="targeta">
-            <img src="/imagenes/carrito/plata.png" >
-          </div>
-    
-         
-         <button class="carrito">
-            <img src="/imagenes/carrito/carrito-de-compras.png">
-         </button>
-    
-        </div>
-    
-    </header> 
-    
-    
-      <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
-        <div class="chat__popup" id="myfrom">
-        <form action="#" class="form__cotainer">
-          <h2>Chatea con nosotros</h2>
-          <label for="msg"><b>Mensaje</b></label>
-          <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
-          <button type="submit" class="btn">Enviar</button>
-          <button type="reset"  class="btn" class="cancel" onclick="closeForm()">borrar</button>
-        </form>
+  <header class="header">
+
+    <nav class="nav">
+      <a href="home.ejs" class="logo nav-link">Home</a>
+      <button class="nav-toggle" aria-label="Abrir menú"> <!--la amurguesa va en midia cueri-->
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="promociones.ejs" class="nav-menu-link nav-link">Promociones</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="productos-nuevos.ejs" class="nav-menu-link nav-link">Productos</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <header class="ecavesadocompra">
+
+    <div class="mediodepago">
+
+      <div class="targeta">
+        <img src="/imagenes/carrito/master.png">
       </div>
-      
-      <main>
-        <h2>Productos</h2>
-       <ul>
-            <li>
-              <% productos.forEach(producto => { %>
-              
-              <div><%= producto.marca %></div>
-              <div><%= producto.descripcion %></div>
-              <div><%= producto.precio %></div>
 
-              <!-- <div class="form-container">
-                <a href="/<%=productos.id%>/edit">Modificar</a>
-              </div> -->
-          
-            </li>
-           <%  }) %>
-       </ul>
-      </main>
-
-     <br>
-                  
-      <div class="form-container">
-        <a href="/create">Creación de un nuevo producto</a>
+      <div class="targeta">
+        <img src="/imagenes/carrito/naranjatarjeta.jpeg">
       </div>
-    
 
-      <iframe src="productos-nuevos.ejs" frameborder="0"></iframe>
+      <div class="targeta">
+        <img src="/imagenes/carrito/visa.png">
+      </div>
 
-    
+      <div class="targeta">
+        <img src="/imagenes/carrito/mercadopago.png">
+      </div>
 
-    
+      <div class="targeta">
+        <img src="/imagenes/carrito/plata.png">
+      </div>
+
+
+      <button class="carrito">
+        <img src="/imagenes/carrito/carrito-de-compras.png">
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
+  <div class="chat__popup" id="myfrom">
+    <form action="#" class="form__cotainer">
+      <h2>Chatea con nosotros</h2>
+      <label for="msg"><b>Mensaje</b></label>
+      <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+      <button type="reset" class="btn" class="cancel" onclick="closeForm()">borrar</button>
+    </form>
+  </div>
+
+  <main>
+    <h2>Productos</h2>
+
+    <ul class="productos-lista">
+      <% productos.forEach(producto=> { %>
+        <li>
+
+          <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
+
+          <img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>">
+
+          <!-- La ruta actual de este archivo producto.ejs es: -->
+          <!-- localhost:3000/views/producto.ejs -->
+
+          <!-- La ruta de las imágenes sería tal vez: -->
+          <!-- localhost:3000/public/imagenes/arroz.png -->
+
+          <h2>
+            <%= producto.marca %>
+              <%= producto.descripcion %>
+          </h2>
+          <div>Precio: $<%= producto.precio %>
+          </div>
+
+          <!--MODIFICADO DIANA 3-->
+          <div class="form-container">
+            <a href="/<%=producto.id%>/edit">Editar</a>
+            <!-- <a href="/eliminarProd">Eliminar</a> Así est-->
+            <a href="/<%=producto.id%>/delete">Eliminar</a>
+            <!-- ¿No crees que va el id? -->
+
+
+          </div>
+          <!--MODIFICADO FIN 3-->
+        </li>
+        <% }) %>
+    </ul>
+  </main>
+
+  <br>
+
+  <div class="form-container">
+    <a href="/create">Creación de un nuevo producto</a>
+  </div>
+
+
+  <iframe src="productos-nuevos.ejs" frameborder="0"></iframe>
+
+
+
+
 </body>
+
 </html>

@@ -6,7 +6,7 @@
     <title>Create</title>
 </head>
 <body>
-    <form action="/create" method="post">
+    <form action="/create" method="post" enctype="multipart/form-data">
         <div>
             <label for="marca">Marca: </label>
             <input type="text" name="marca" id="marca" placeholder="Ingresa la Marca">
@@ -24,6 +24,10 @@
             <input type="number" name="precio" id="precio" placeholder="Ingresa el Precio">
         </div>
         <br>
+        <div>
+            <label for="imagen">Imagen: </label>
+            <input type="file" name="imagen" id="imagen" placeholder="Carga la imagen ">
+        </div>
         <div>
             <button type="submit" value="Guardar Producto">Crear nuevo producto</button>
         </div>
