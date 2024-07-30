@@ -1,50 +1,30 @@
 [
  {
-  "id": 1,
+  "id": 8,
   "marca": "Ariel",
-  "descripcion": "detergente de 1,25",
-  "precio": 1200
+  "descripcion": "Detargente de 2L",
+  "precio": "13.000",
+  "imagen": "detergente.jpeg"
  },
  {
-  "id": 2,
-  "marca": "MisterMusculo",
-  "descripcion": "antigrasa",
-  "precio": 2000
- },
- {
-  "id": 3,
-  "marca": "Lavandina",
-  "descripcion": "Lavandina de 5 litros",
-  "precio": 5000
- },
- {
-  "id": 4,
-  "marca": "Ford",
-  "descripcion": "Explorer",
-  "precio": 40000000
+  "id": 11,
+  "marca": "Sussez",
+  "descripcion": "Rollo de papel de cocina ",
+  "precio": "6.000",
+  "imagen": "rollodecocina.jpeg"
  },
  {
   "id": 5,
-  "marca": "Olive",
-  "descripcion": "aceite de oliva",
-  "precio": "1500"
+  "marca": "Sabritas ",
+  "descripcion": "Papas fritas de sal",
+  "precio": "12.000",
+  "imagen": "1722359188009-sabritas.jpeg"
  },
  {
-  "id": 6,
-  "marca": "abana",
-  "descripcion": "yerba",
-  "precio": "4000"
- },
- {
-  "id": 7,
-  "marca": "Danonito",
-  "descripcion": "Yogur para niños, favorece su crecimiento ",
-  "precio": "2500"
- },
- {
-  "id": 8,
-  "marca": "loa",
-  "descripcion": "yi",
-  "precio": "4"
+  "id": 4,
+  "marca": "Coca-Cola",
+  "descripcion": "Refresco de 600ML",
+  "precio": "9.000",
+  "imagen": "1722362732917-refresco.jpeg"
  }
 ]

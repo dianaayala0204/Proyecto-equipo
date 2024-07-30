@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Producto</title>
+</head>
+<body>
+    <p>¿Estas seguro que deseas eliminar el producto <%= producto.marca %> <%= producto.descripcion %> <%= producto.precio %>?</p>
+    <h1>Eliminar Producto</h1>
+    <form action="/<%=producto.id%>?_method=DELETE" method="POST" >
+        <Button type="submit">Eliminar</Button>
+    </form>
+    <a href="/">Cancelar</a>
+</body>
+</html>
