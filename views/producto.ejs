@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="css/styles.css">
-
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/nuevo.css">
 
   <link rel="stylesheet" href="css/carrito.css">
 
@@ -24,16 +22,16 @@
   <header class="header">
 
     <nav class="nav">
-      <a href="home.ejs" class="logo nav-link">Home</a>
+      <a href="home" class="logo nav-link">Home</a>
       <button class="nav-toggle" aria-label="Abrir menú"> <!--la amurguesa va en midia cueri-->
         <i class="fa fa-bars"></i>
       </button>
       <ul class="nav-menu">
         <li class="nav-menu-item">
-          <a href="promociones.ejs" class="nav-menu-link nav-link">Promociones</a>
+          <a href="promociones"  class="nav-menu-link nav-link">Promociones</a>
         </li>
         <li class="nav-menu-item">
-          <a href="productos-nuevos.ejs" class="nav-menu-link nav-link">Productos</a>
+          <a href="producto" class="nav-menu-link nav-link">Productos</a>
         </li>
       </ul>
     </nav>
@@ -123,9 +121,7 @@
   </div>
 
 
-  <iframe src="productos-nuevos.ejs" frameborder="0"></iframe>
-
-
+  <%- include('../views/productos-nuevos.ejs') %>  
 
 
 </body>
