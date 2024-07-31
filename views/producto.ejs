@@ -96,11 +96,6 @@
 
           <img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>">
 
-          <!-- La ruta actual de este archivo producto.ejs es: -->
-          <!-- localhost:3000/views/producto.ejs -->
-
-          <!-- La ruta de las imágenes sería tal vez: -->
-          <!-- localhost:3000/public/imagenes/arroz.png -->
 
           <h2>
             <%= producto.marca %>
@@ -109,16 +104,13 @@
           <div>Precio: $<%= producto.precio %>
           </div>
 
-          <!--MODIFICADO DIANA 3-->
           <div class="form-container">
             <a href="/<%=producto.id%>/edit">Editar</a>
-            <!-- <a href="/eliminarProd">Eliminar</a> Así est-->
+            
             <a href="/<%=producto.id%>/delete">Eliminar</a>
-            <!-- ¿No crees que va el id? -->
-
-
+          
           </div>
-          <!--MODIFICADO FIN 3-->
+       
         </li>
         <% }) %>
     </ul>

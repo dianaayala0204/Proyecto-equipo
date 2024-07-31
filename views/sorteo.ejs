@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promociones y sorteos</title>
+  <link rel="stylesheet" href="/css/sorteo.css">
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!--Boostrap - iconos-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!--Boostrap carrusel-->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="img_center">
+          <img src="imagenes/sorteo1.png" height="350px" class="d-block w-95" alt="...">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="img_center">
+          <img src="imagenes/sorteo2.gif" height="350px" class="d-block w-95" alt="...">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="img_center">
+          <img src="imagenes/sorteo1.png" height="350px" class="d-block w-95" alt="...">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="img_center">
+          <img src="imagenes/sorteo2.gif" height="350px" class="d-block w-95" alt="...">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<br>
+
+  <div>
+    <h2 class="misma_linea">Registra tus tickets de compra y gana</h2>
+    <button class="boton-tickets">Registra tu ticket</button>
+  </div>
+
+  <br>
+
+  <section>
+
+    <h3 class="marimar">Participa en los sorteos y promociones de Marimar</h3>
+
+    <br>
+
+    <div class="pasos-registro">
+      <p>
+        <a href="#" class="link-iconos"><i class="bi bi-person-fill"></i></a><br>
+        <i class="bi bi-1-square-fill"></i> Registrate en la pagina<br>
+      </p>
+
+      <p>
+        <a href="#" class="link-iconos"><i class="bi bi-clipboard-check-fill"></i></a><br>
+        <i class="bi bi-2-square-fill"></i> Registra tus tickets de compra <br>
+      </p>
+
+      <p>
+        <a href="#" class="link-iconos"><i class="bi bi-gift-fill"></i></a><br>
+        <i class="bi bi-3-square-fill"></i> Ya estas participando <br>
+      </p>
+    </div>
+
+    <br>
+
+    <div>
+      <h4 class="premios">Premios del sorteo otoño - invierno</h4>
+    </div>
+
+    <div class="tarjeta">
+      <img src="imagenes/carrogratis.jpg" alt="premios 1">
+      <p>Por cada $1,000 de compra de los departamentos participantes, obten un folio de participacion, solo debes
+        registrar tus tickets en sorteos/marimar.com.mx y podrias ganar 3 carritos semanales de $500
+      </p>
+      <button class="boton-tickets">Registra tu ticket</button>
+    </div>
+
+    <br>
+
+    <div class="tarjeta">
+      <img src="imagenes/electrodomestico.jpg" alt="premios 2">
+      <p>Por cada $1,000 pesos de compra de los departamentos participantes, obten un folio de participacion, solo debes
+        registrar tus tickets en sorteos/marimar.com.mx y podrias ganar uno de los 10 modernos electronicos con un
+        valor de hasta $100,000 pesos
+      </p>
+      <button class="boton-tickets">Registra tu ticket</button>
+    </div>
+
+
+    <section class="formulario-contenedor">
+      <form action="/user" method="POST">
+
+        <h3>Registra tus tickets de compra</h3>
+        <p>* Campos requeridos</p>
+        <br>
+
+        <label for="monto">* Monto de compra:</label>
+        <input class="margin_2-bottom" type="text" id="monto" name="monto" placeholder="" >
+  
+        <label for="fecha">* Fecha de compra:</label>
+        <input class="margin_2-bottom" type="date" id="fecha" name="fecha" placeholder="">
+        
+        <label for="codigo">* Codigo de facturacion:</label>
+        <input class="margin_2-bottom" type="text" id="codigo" name="codigo" placeholder="">
+        <br><br>
+        <div >
+          <button type="submit">Enviar</button>
+          <button type="submit">Cancelar</button>
+        </div>
+
+    </section>
+
+    <table>
+
+      <tr>
+        <th class="omision_borde"><i class="bi bi-trophy-fill"></i> Ganadores</th>
+
+      </tr>
+
+      <tr class="encabezados">
+        <th>Numero de folios participantes: 1,000</th>
+        <th>Seleccion de acredores: 20-Agosto-2024</th>
+        <th style="border-left: none !important;">Numero de acreedores: 100</th>
+      </tr>
+
+      <tr>
+        <th>Acreedor</th>
+        <th colspan="2">Numero de folio</th>
+      </tr>
+
+      <tr>
+        <td>Emiliano Sanchez</td>
+        <td colspan="2">2345666771</td>
+      </tr>
+
+      <tr>
+        <td>Alejandro Campos</td>
+        <td colspan="2">1259095748</td>
+      </tr>
+
+      <tr>
+        <td>Elena Hernandez</td>
+        <td colspan="2">4590379421</td>
+      </tr>
+
+      <tr>
+        <td>Fernanda Catilllo</td>
+        <td colspan="2">6701098467</td>
+      </tr>
+
+      <tr>
+        <td>Brandon Medrano</td>
+        <td colspan="2">5609365123</td>
+      </tr>
+
+      <tr>
+        <td>Miguel Jimenez</td>
+        <td colspan="2">8024579325</td>
+      </tr>
+    </table>
+
+  </section>
+</body>
+
+</html>
