@@ -36,10 +36,6 @@
             <li class="nav-menu-item">
               <a href="producto.ejs" class="nav-menu-link nav-link">Productos</a>
             </li>
-            <li class="nav-menu-item">
-                <a href="#" class="nav-menu-link nav-link"> </a>
-            </li>
-
           </ul>
         </nav>
           
@@ -100,9 +96,9 @@
 
       </div>
 
-                                       <!--sorteo formulario -->
+      <!--sorteo formulario -->
 
-     <iframe class="sorteo" src="http://127.0.0.1:5500/Seccion-Sorteo/sorteo.html"></iframe>
+     <%- include('../views/sorteo') %>                 
      
                           <!-- secion de productos limpieza -->
           
@@ -278,8 +274,7 @@
         </section> 
       </details>
 
-     
-      <iframe src="carruzel videos.ejs" frameborder="0" ></iframe>
+      <%- include('../views/carruzel videos') %>  
 
     <main>
 

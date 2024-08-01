@@ -41,7 +41,7 @@ const productosController = {
     },
 
 
-    // MODIFICADO DIANA 1
+
     edit: (req, res) => {
         const id = req.params.id;
         const producto = productos.find(producto => producto.id == id);
@@ -118,6 +118,6 @@ const productosController = {
 
 
 
-// FIN MODIFICADO
+
 
 module.exports = productosController;
