@@ -16,7 +16,7 @@
 }
   
 .nav-link {
-    color: white;
+    color: rgb(43, 41, 41);
     text-decoration: none;
 }
   
@@ -48,13 +48,13 @@
 .nav-menu-link:hover,
 .nav-menu-link_active {
     background: none;
-    color: #83c5f7;
+    color: #8cc8f7;
     transition: 0.5s;
 }
   
 /* TOGGLE  boton del navegador */
 .nav-toggle {
-    color: #09e5f5;
+    color: #0921f5;
     background: none;
     border: none;
     font-size: 30px;
