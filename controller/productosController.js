@@ -103,7 +103,17 @@ const productosController = {
         } else {
             res.status(404).send("Producto no encontrado");
         }
-    }
+    },
+
+    /** Añadido render productos-nuevos para mostrar iframe productos nuevos en productos.ejs */
+    productos_nuevos: (req, res) => {
+        res.render('productos-nuevos');
+    },
+
+    /** Añadido render promociones para mostrar página promociones */
+    promociones: (req, res) => {
+        res.render("promociones");
+    },
 }
 
 
