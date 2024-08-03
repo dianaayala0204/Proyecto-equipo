@@ -7,8 +7,6 @@
   <title>Marimar</title>
   <link rel="stylesheet" href="css/nuevo.css">
 
-  <link rel="stylesheet" href="css/carrito.css">
-
   <link rel="shortcut icon" href="imagenes/carrito verde icon.ico" type="image/x-icon">
   <!--le inserto una pequeña imagen a la etiqueta />-->
 </head>
@@ -18,38 +16,8 @@
   <%-include('partials/navegador')%>  
   
   <%-include('partials/chat_emergencia')%> 
-  <header class="ecavesadocompra">
 
-    <div class="mediodepago">
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/master.png">
-      </div>
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/naranjatarjeta.jpeg">
-      </div>
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/visa.png">
-      </div>
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/mercadopago.png">
-      </div>
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/plata.png">
-      </div>
-
-
-      <button class="carrito">
-        <img src="/imagenes/carrito/carrito-de-compras.png">
-      </button>
-
-    </div>
-
-  </header>
+  <%- include('partials/mediodepago') %> 
 
   <main>
     <h2>Productos</h2>
