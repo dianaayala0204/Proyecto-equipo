@@ -25,6 +25,19 @@ const storage = multer.diskStorage({
 const upload = multer({ storage }); // Se ve bien, debería funcionar
 
 
+router.get('/', (req, res) => {
+    res.render('home');
+});
+
+router.get('/promociones', (req, res) => {
+     res.render('promociones');
+});
+
+router.get('/producto', (req, res) => {
+     res.render('producto');
+});
+
+
 router.get("/", productoController.list);
 
 router.get("/create", productoController.create);

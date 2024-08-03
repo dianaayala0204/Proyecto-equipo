@@ -2,121 +2,6 @@
     margin: 0;
 }
 
-
-.header {
-    background-color: #0769e9;
-    height: 50px;
-    width: 102%;
-}
-  
-.nav {
-    display: flex; 
-    justify-content: space-between; 
-    margin: 0 5px;
-}
-  
-.nav-link {
-    color: rgb(43, 41, 41);
-    text-decoration: none;
-}
-  
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    padding-left: 3px;
-    line-height: 50px;
-}
-  
-.nav-menu {
-    display: flex; 
-    padding: 2px;
-    list-style: none;
-}
-  
-.nav-menu-item {
-    font-size: 13px;
-    margin: 0 3px;
-    line-height: 50px;
-    width: max-content;     /*se utiliza para establecer el ancho máximo de un elemento*/ 
-}
-  
-.nav-menu-link {
-    padding: 8px;
-    border-radius: 3px;
-}
-  
-.nav-menu-link:hover,
-.nav-menu-link_active {
-    background: none;
-    color: #8cc8f7;
-    transition: 0.5s;
-}
-  
-/* TOGGLE  boton del navegador */
-.nav-toggle {
-    color: #0921f5;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 25px;
-    line-height: 60px;
-    cursor: pointer;
-    
-    display: none;  
-}
-  
-@media (min-width:200px) and (max-width:500px){  
-  
-    .header {
-        height: 60px;   /*tamaño del nevegador*/
-          
-    }
-    
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        background-color: #38536e;
-        position: fixed;
-        top: 60px;
-        width:100%;
-        padding: 20px 0;
-      
-        height: calc(100% - 60px); 
-        overflow-y: auto;
-      
-        left: 100%; 
-        transition: left 0.3s;
-    }
-      
-    .nav-menu-item {
-        line-height: 70px;
-    }
-      
-    .nav-menu-link:hover,
-    .nav-menu-link_active {
-        background: none;
-        color: #95d0fd;
-    }
-      
-    .nav-toggle {
-        display: block;
-    }
-      
-    .nav-menu_visible {  /*desplegable */
-        left: 0;
-    }
-      
-    .nav-toggle:focus:not(:focus-visible) { 
-        outline: none;
-    } 
-}
-    
-
-
-/*mobay (500) nav hecho*/
-
-
 main{                      /*listo*/
     margin-bottom:15px;
 }
@@ -156,13 +41,6 @@ main{                      /*listo*/
 
 .saludo label{
     font-size: 16px;
-}
-
-
-iframe{
-
-    height:250px;
-    width:102%;
 }
 
 .encavesadovene{            /* listo*/                 
@@ -337,136 +215,14 @@ iframe{
 
 
 .boton{                       /* listo*/
-  margin-left: 50%
+  margin-left: 80%
 }
 
 
-.footer-servicio-social{
-   background-color: rgb(209, 209, 209);
-   width: 102% ;
-}
-
-.info{
-    display: flex; 
-    justify-content:space-between;
-    margin-right: 300px; 
-    margin-left: 160px;
-}
-
-
-.info img{
-    height: auto;
-    width: 25px;
-    padding: 2px;
-}
-
-
-.titulofooter{
-    font-size: 12px;
-    text-align: center;
-    margin-bottom:10px ;
-}
-
-.iten{
-    list-style: none;                      /*listo*/
-    font-size: 9px;
-    padding-bottom: 10px ;
-}
-
-/* chat de emergensia*/
-.open-botton{
-    width: 160px;
-    padding: 5px 7px;
-    position: fixed;
-    bottom: 0px;
-    right: 45px;
-    margin-bottom: 24px ;
-    font-weight: 700;  /*pone gruesa la letra*/
-    font-size: 9px;
-    border-radius: 6px;  /*tamaño del borde del boton*/
-    cursor: pointer;
-    color: #fff;
-    background-color: #e40404;
-    
-}
-
-.open-botton i{
-    display:inline-flex;
-    margin-right: 5px;
-}
-
-.chat__popup{
-    position: fixed;
-    bottom: 0;
-    right: 25px;
-}
-
-.form__cotainer{
-    max-width: 220px;
-    padding: 10px;
-    font-size: .8rem;
-    color: #000;
-    background-color: #ecf7ff;
-}
-
-.form__cotainer textarea{
-    width: 95%;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    background: #e7e1e1;
-    resize: none;
-    min-height: 100px;
-}
-
-.form__cotainer h2{
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-.form__cotainer textarea:focus{
-    background-color: #cecbcb;
-    outline: none;
-}
-
-.form__cotainer .btn{
-    width: 95%;
-    padding: 11px 15px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: 700;
-    background-color: #3ae23a;
-}
-
-.form__cotainer{
-    opacity: 1;
-}
-
-.form__cotainer .cancel{
-    background-color: #e40505;
-}
-/* mobay contenido listo   /*                                              /*https://getbootstrap.com/*/
-
-
+                                          /*https://getbootstrap.com/
 
 /*tablet */ /*DIANA*/
 @media (min-width: 501px) and (max-width: 800px) {
-    .logo {
-        font-size: 21px;
-        padding-left: 5px;
-    }
-
-    .nav-menu-item {
-        font-size: 13px;
-        margin: 0 3px;
-    }
-
-    .nav-menu-link {
-        padding: 6px;
-    }
 
     .bienvenida h1 {
         font-size: 22px;
@@ -488,13 +244,6 @@ iframe{
       
     .saludo label{
         font-size: 16px;
-    }
-      
-
-    iframe{
-
-        height:250px;
-        width:102%;
     }
 
     .veneficio {
@@ -594,73 +343,15 @@ iframe{
         margin-left: 65%;
     }
 
-    .info img{
-        height: auto;
-        width: 28px;
-        height: auto;
-        padding: 2px;
-    }
-    
-    .info{
-        display: flex; 
-        justify-content:space-between; 
-        padding-left: 75px;
-    }
-     
-    .titulofooter{
-        text-align: center;
-        font-size: 13px;
-    }
+   
      
    
-    .iten{
-        list-style: none;                       /*listo*/
-        font-size: 10px;
-        padding-bottom: 10px ;
-    }
 
-    /* chat de emergensia*/  /*listo*/
-   .open-botton{
-    right: 60px;
-    font-size: 13px;
- 
-   }
-
-   .open-botton i{
-    margin-right: 2px;
-   }
-
-   .chat__popup{
-    right: 25px;
-   }
-
-  .form__cotainer textarea{
-    width: 93%;
-  }
-
-  .form__cotainer .btn{
-    width: 95%;
-  }
-  
 }
 
 /* Table grande */           
 @media (min-width: 801px) and (max-width:1000px){      
-  
-.logo {
-    font-size: 30px;
-    padding-left: 20px;
-    line-height: 50px;
-}
 
-.nav-menu-item {
-    font-size: 18px;
-    margin: 0 8px;
-}
-
-.nav-menu-link {
-    padding: 15px;
-}
 
 /* tablet grade nav hecho*/
 
@@ -684,13 +375,6 @@ iframe{
   
 .saludo label{
     font-size: 18px;
-}
-
-
-iframe{
-
-    height:260px;
-    width:102%;
 }
 
 .veneficio{                 /* listo*/                   
@@ -800,79 +484,12 @@ iframe{
   margin-left: 70%
 }
 
-.info img{
-    height: auto;
-    width: 30px;
-    padding: 2px;
-}
-
-.info{
-    display: flex; 
-    justify-content:space-between; 
-    padding-left: 140px;
-  }
- 
- .titulofooter{
-    font-size: 15px;
-  }
- 
- .iten{                      /*listo*/
-    font-size: 13px;
-    padding-bottom: 10px ;
-  }
-
-  /* chat de emergensia*/    /*listo*/
-  .open-botton{
-    right: 70px;
-    font-size: 15px;
-    width: 220px;
-   }
-
-  .chat__popup{
-    right: 58px;
-   }
-
-  .form__cotainer{
-    max-width: 250px;
-  }
-
-
-  .form__cotainer textarea{
-    width: 96%;
-   }
-  .form__cotainer .btn{
-    width: 97%;
-}
-
   /*Tablet grande listo*/
 }
 
 /* escritorio */         
 @media (min-width: 1001px) and (max-width:1200px){  /* escritorio hecho*/
 
-      
-.logo {
-    font-size: 37px;
-    padding-left: 25px;
-}
-
-.nav-menu-item {
-    font-size: 26px;
-    margin: 0 16px;
-}
- 
-
-.nav-menu-link {
-    padding: 12px;
-}
-
-.header {
-    height: 57px;
-    width: 103%;
-}
-
-
-/* escritorio nav hecho*/
 
 .bienvenida{               /* listo*/                
     width: 103%;    
@@ -898,13 +515,6 @@ iframe{
   
 .saludo label{
     font-size: 25px;
-}
-
-
-iframe{
-
-    height:270px;
-    width:103%;
 }
 
 .veneficio{                 /* listo*/                   
@@ -1015,55 +625,6 @@ iframe{
 }
 
 
-.info img{
-    height: auto;
-    width: 40px;
-    padding: 2px;
-}
-
-.info{
-    display: flex; 
-    justify-content:space-between; 
-    margin-right: 400px ;
-    margin-bottom: 15px;
-    margin-left: 350px;
-
-}
- 
-.titulofooter{
-    font-size: 23px;
-    margin-bottom: 20px;
-}
- 
-.iten{                      /*listo*/
-    font-size: 16px;
-    padding-bottom: 10px ;
-}
-
-
-/* chat de emergensia*/    /*listo*/
-.open-botton{
-    right: 97px;
-    font-size: 18px;
-    width: 250px;
-}
-
-.chat__popup{
-    right: 85px;
-}
-
-.form__cotainer{
-    max-width: 270px;
-    font-size: 17px;
-}
-
-.form__cotainer textarea{
-    width: 95%;
-}
-
-.form__cotainer .btn{
-    width: 95%;
-}
 
 
 } 
@@ -1072,30 +633,7 @@ iframe{
 /* escrirorio monitor grande*/         
 @media (min-width: 1201px) and (max-width:1400px){   /* escrirorio monitor grande listo*/ 
 
-      
-    .logo {
-        font-size: 45px;
-        padding-left: 30px;
-    }
-    
-    .nav-menu-item {
-        font-size: 30px;
-        margin: 0 10px;
-    }
-
    
-    .nav-menu-link {
-        padding: 15px;
-    }
-    
-    .header {
-        height: 65px;
-        width: 110%;
-    
-    }
-
-
-    /* escritorio nav hecho*/
 
     .bienvenida{               /* listo*/                
         width: 110%;    
@@ -1122,13 +660,6 @@ iframe{
     .saludo label{
         font-size: 25px;
     }
-    
-    iframe{
-
-        height:280px;
-        width: 110%;
-    }
-
 
     .veneficio h4{               /* listo*/                   
         font-size:30px;
@@ -1231,62 +762,6 @@ iframe{
         margin-left: 70%
     }
 
-   .info img{
-      height: auto;
-      width: 50px;
-      padding: 2px;
-    }
-
-    .info{
-      display: flex; 
-      justify-content:space-between; 
-      margin-right: 400px ;
-      margin-bottom: 15px;
-     margin-left: 350px;
-
-    }
- 
-   .titulofooter{
-     font-size: 25px;
-     margin-bottom: 20px;
-    }
- 
-  .iten{                      /*listo*/
-     font-size: 17px;
-     padding-bottom: 10px ;
-  }
-
-  .footer-servicio-social{
-    width: 110% ;
- }
-
-   /* chat de emergensia*/    /*listo*/
-.open-botton{
-    right: 140px;
-    font-size: 22px;
-    width: 270px;
-}
-
-.chat__popup{
-    right: 140px;
-}
-
-.form__cotainer {
-    max-width: 300px;
-    padding: 10px;
-    font-size: 19px;
- 
-}
-
-
-.form__cotainer textarea{
-    
-    width: 96%;
-}
-
-.form__cotainer .btn{
-    width: 98%;
-}
-
+  
 
 }

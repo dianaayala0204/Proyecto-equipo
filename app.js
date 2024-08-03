@@ -27,6 +27,7 @@ const routerProducto = require('./router/productoRouter');
 // const multer = require('multer');
 app.use("/", routerProducto);
 
+
 // app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('public'));
 

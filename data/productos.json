@@ -14,17 +14,17 @@
   "imagen": "rollodecocina.jpeg"
  },
  {
-  "id": 5,
-  "marca": "Sabritas ",
-  "descripcion": "Papas fritas de sal",
-  "precio": "12.000",
-  "imagen": "1722359188009-sabritas.jpeg"
- },
- {
   "id": 4,
   "marca": "Coca-Cola",
   "descripcion": "Refresco de 600ML",
   "precio": "9.000",
   "imagen": "1722362732917-refresco.jpeg"
+ },
+ {
+  "id": 4,
+  "marca": "Florencia",
+  "descripcion": "vela flotante",
+  "precio": "3.000",
+  "imagen": "1722633650600-velasflotantes.jpeg"
  }
 ]
