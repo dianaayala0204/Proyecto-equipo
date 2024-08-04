@@ -93,28 +93,29 @@
 
   <main>
     <h2>Productos</h2>
-
-    <ul class="productos-lista">
-      <% productos.forEach(producto=> { %>
-        <li>
-
-          <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
-
-          <img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>">
-
-
-          <h2>
-            <%= producto.marca %>
-              <%= producto.descripcion %>
-          </h2>
-          <div>Precio: $<%= producto.precio %>
-          </div>
-
-          <div class="form-container">
-            <a href="/<%=producto.id%>/edit">Editar</a>
-            
-            <a href="/<%=producto.id%>/delete">Eliminar</a>
-          
+    <div class="container-fluid mb-3">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% productos.forEach(producto=> { %>
+          <div class="col">
+            <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
+            <!--<img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
+            <div class="card">
+              <img height="350" width="350" src="../imagenes/<%=producto.imagen%>"
+                alt="<%= producto.marca %> <%= producto.descripcion %>">
+              <h4>
+                <%= producto.marca %>
+                  <%= producto.descripcion %>
+              </h4>
+              <h5>Precio: $<%= producto.precio %>
+              </h5>
+              <br>
+              <div class="form-container">
+                <a class="btn btn-primary ms-2" href="/<%=producto.id%>/edit">Editar</a>
+                <a class="btn btn-danger ms-2" href="/<%=producto.id%>/delete">Eliminar</a>
+              </div>
+              <br>
+            </div>
+            <br><br>
           </div>
           <% }) %>
       </div>
