@@ -30,15 +30,24 @@ router.get('/', (req, res) => {
 });
 
 router.get('/promociones', (req, res) => {
-     res.render('promociones');
+    res.render('promociones');
 });
 
-router.get('/producto', (req, res) => {
-     res.render('producto');
-});
+/** Se modificaron las routes
+ * router get se quita el res.render porque la vista /producto necesita una lista de productos
+ * se cambia la route raiz / porque debe direccionar a home
+ * se comentan las siguiente lineas de código porque router get producto está incompleto.
+ */
 
+// router.get('/producto', (req, res) => {
+//      res.render('producto', { productos });
+// });
 
-router.get("/", productoController.list);
+/** Se cambio la route / porque ya existe
+ * Se muestra a traves de productoController método list
+ * Este es el render completo con la lista de productos, extraída de productos.json
+ */
+router.get("/producto", productoController.list);
 
 router.get("/create", productoController.create);
 
