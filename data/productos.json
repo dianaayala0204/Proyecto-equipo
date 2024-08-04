@@ -1,30 +1,23 @@
 [
  {
-  "id": 8,
-  "marca": "Ariel",
-  "descripcion": "Detargente de 2L",
-  "precio": "7.000",
-  "imagen": "1722429949379-detergente.jpeg"
- },
- {
-  "id": 11,
-  "marca": "Sussez",
-  "descripcion": "Rollo de papel de cocina ",
-  "precio": "6.000",
-  "imagen": "rollodecocina.jpeg"
- },
- {
-  "id": 5,
+  "id": 1,
   "marca": "Sabritas ",
   "descripcion": "Papas fritas de sal",
-  "precio": "12.000",
-  "imagen": "1722359188009-sabritas.jpeg"
+  "precio": "345.000",
+  "imagen": "1722718512979-sabritas.jpeg"
  },
  {
-  "id": 4,
+  "id": 2,
   "marca": "Coca-Cola",
-  "descripcion": "Refresco de 600ML",
-  "precio": "9.000",
-  "imagen": "1722362732917-refresco.jpeg"
+  "descripcion": "Refresco de 2L",
+  "precio": "589.000",
+  "imagen": "1722718619736-refresco.jpeg"
+ },
+ {
+  "id": 3,
+  "marca": "Alpura",
+  "descripcion": "Leche de cartón 1L",
+  "precio": "69.000",
+  "imagen": "1722720253736-leche.jpg"
  }
 ]

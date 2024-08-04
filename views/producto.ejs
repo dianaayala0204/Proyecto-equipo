@@ -13,7 +13,8 @@
 
   <script defer src="javascrip/chatdeemergencia.js"></script>
 
-  <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon">
+  <!-- <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon"> No encontró por espacios-->
+  <link rel="shortcut icon" href="imagenes/carrito_verde.ico" type="image/x-icon">
   <!--le inserto una pequeña imagen a la etiqueta />-->
 </head>
 
@@ -71,7 +72,7 @@
 
   </header>
 
-
+  
   <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
   <div class="chat__popup" id="myfrom">
     <form action="#" class="form__cotainer">
@@ -79,9 +80,10 @@
       <label for="msg"><b>Mensaje</b></label>
       <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
       <button type="submit" class="btn">Enviar</button>
-      <button type="reset" class="btn" class="cancel" onclick="closeForm()">borrar</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
     </form>
   </div>
+ 
 
   <main>
     <h2>Productos</h2>
@@ -92,32 +94,36 @@
 
           <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
 
-          <img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>">
+          <!--<img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
+          
+          <div class="card" style="width: 22rem;">
+            <img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>" >
+            <div class="card-body">
+            </div>
+          
+        
 
-
-          <h2>
+          <h4>
             <%= producto.marca %>
               <%= producto.descripcion %>
-          </h2>
-          <div>Precio: $<%= producto.precio %>
-          </div>
-
+          </h4>
+          <h5>Precio: $<%= producto.precio %></h5>
+       <br>
           <div class="form-container">
-            <a href="/<%=producto.id%>/edit">Editar</a>
-            
-            <a href="/<%=producto.id%>/delete">Eliminar</a>
-          
+            <a class="btn btn-primary ms-2" href="/<%=producto.id%>/edit">Editar</a>
+            <a class="btn btn-danger" href="/<%=producto.id%>/delete">Eliminar</a>
           </div>
-       
+          <br>
+        </div>
+
+        <br><br>
         </li>
         <% }) %>
     </ul>
   </main>
 
-  <br>
-
   <div class="form-container">
-    <a href="/create">Creación de un nuevo producto</a>
+    <a class="btn btn-primary ms-2" href="/create">Crear Nuevo Producto</a>
   </div>
 
 
