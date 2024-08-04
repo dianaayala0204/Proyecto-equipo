@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Home</title>
   <link rel="stylesheet" href="css/nuevo.css">
 
@@ -29,7 +30,7 @@
       </button>
       <ul class="nav-menu">
         <li class="nav-menu-item">
-          <a href="promociones"  class="nav-menu-link nav-link">Promociones</a>
+          <a href="promociones" class="nav-menu-link nav-link">Promociones</a>
         </li>
         <li class="nav-menu-item">
           <a href="producto" class="nav-menu-link nav-link">Productos</a>
@@ -72,7 +73,7 @@
 
   </header>
 
-  
+
   <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
   <div class="chat__popup" id="myfrom">
     <form action="#" class="form__cotainer">
@@ -83,43 +84,37 @@
       <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
     </form>
   </div>
- 
+
 
   <main>
     <h2>Productos</h2>
-
-    <ul class="productos-lista">
-      <% productos.forEach(producto=> { %>
-        <li>
-
-          <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
-
-          <!--<img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
-          
-          <div class="card" style="width: 22rem;">
-            <img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>" >
-            <div class="card-body">
+    <div class="container-fluid mb-3">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% productos.forEach(producto=> { %>
+          <div class="col">
+            <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
+            <!--<img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
+            <div class="card">
+              <img height="350" width="350" src="../imagenes/<%=producto.imagen%>"
+                alt="<%= producto.marca %> <%= producto.descripcion %>">
+              <h4>
+                <%= producto.marca %>
+                  <%= producto.descripcion %>
+              </h4>
+              <h5>Precio: $<%= producto.precio %>
+              </h5>
+              <br>
+              <div class="form-container">
+                <a class="btn btn-primary ms-2" href="/<%=producto.id%>/edit">Editar</a>
+                <a class="btn btn-danger ms-2" href="/<%=producto.id%>/delete">Eliminar</a>
+              </div>
+              <br>
             </div>
-          
-        
-
-          <h4>
-            <%= producto.marca %>
-              <%= producto.descripcion %>
-          </h4>
-          <h5>Precio: $<%= producto.precio %></h5>
-       <br>
-          <div class="form-container">
-            <a class="btn btn-primary ms-2" href="/<%=producto.id%>/edit">Editar</a>
-            <a class="btn btn-danger" href="/<%=producto.id%>/delete">Eliminar</a>
+            <br><br>
           </div>
-          <br>
-        </div>
-
-        <br><br>
-        </li>
-        <% }) %>
-    </ul>
+          <% }) %>
+      </div>
+    </div>
   </main>
 
   <div class="form-container">
@@ -127,7 +122,7 @@
   </div>
 
 
-  <%- include('../views/productos-nuevos.ejs') %>  
+  <%- include('../views/productos-nuevos.ejs') %>
 
 
 </body>
