@@ -1,0 +1,197 @@
+/* chat de emergensia*/
+.open-botton{
+    width: 160px;
+    padding: 5px 7px;
+    position: fixed;
+    bottom: 0px;
+    right: 45px;
+    margin-bottom: 24px ;
+    font-weight: 700;  /*pone gruesa la letra*/
+    font-size: 9px;
+    border-radius: 6px;  /*tamaño del borde del boton*/
+    cursor: pointer;
+    color: #fff;
+    background-color: #e40404;
+    
+}
+
+.open-botton i{
+    display:inline-flex;
+    margin-right: 5px;
+}
+                                
+.chat__popup{
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+}
+
+.form__cotainer{
+    max-width: 220px;
+    padding: 10px;
+    font-size: .8rem;
+    color: #000;
+    background-color: #ecf7ff;
+}
+
+.form__cotainer textarea{
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background: #e7e1e1;
+    resize: none;
+    min-height: 100px;
+}
+
+.form__cotainer h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.form__cotainer textarea:focus{
+    background-color: #cecbcb;
+    outline: none;
+}
+
+.form__cotainer .btn{
+    width: 95%;
+    padding: 11px 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background-color: #3ae23a;
+}
+
+.form__cotainer .cancel{
+  width: 95%;
+  padding: 11px 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  background-color: #e40505;
+}
+
+.form__cotainer{
+    opacity: 1;
+}
+
+  
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+        /* chat de emergensia*/  /*listo*/
+   .open-botton{
+    right: 60px;
+    font-size: 13px;
+ 
+   }
+
+   .open-botton i{
+    margin-right: 2px;
+   }
+
+   .chat__popup{
+    right: 25px;
+   }
+
+  .form__cotainer textarea{
+    width: 93%;
+  }
+
+  .form__cotainer .btn{
+    width: 95%;
+  }
+  
+}
+
+@media (min-width: 801px) and (max-width:1000px){ 
+    
+    /* chat de emergensia*/    /*listo*/
+  .open-botton{
+    right: 70px;
+    font-size: 15px;
+    width: 220px;
+   }
+
+  .chat__popup{
+    right: 58px;
+   }
+
+  .form__cotainer{
+    max-width: 250px;
+  }
+
+
+  .form__cotainer textarea{
+    width: 96%;
+   }
+  .form__cotainer .btn{
+    width: 97%;
+}
+
+}
+
+@media (min-width: 1001px) and (max-width:1200px){  /* escritorio hecho*/
+  /* chat de emergensia*/    /*listo*/
+.open-botton{
+  right: 97px;
+  font-size: 18px;
+  width: 250px;
+}
+
+.chat__popup{
+  right: 85px;
+}
+
+.form__cotainer{
+  max-width: 270px;
+  font-size: 17px;
+}
+
+.form__cotainer textarea{
+  width: 95%;
+}
+
+.form__cotainer .btn{
+  width: 95%;
+}
+
+}
+
+@media (min-width: 1201px) and (max-width:1400px){   /* escrirorio monitor grande listo*/ 
+  /* chat de emergensia*/    /*listo*/
+.open-botton{
+  right: 140px;
+  font-size: 22px;
+  width: 270px;
+}
+
+.chat__popup{
+  right: 140px;
+}
+
+.form__cotainer {
+  max-width: 300px;
+  padding: 10px;
+  font-size: 19px;
+
+}
+
+
+.form__cotainer textarea{
+  
+  width: 96%;
+}
+
+.form__cotainer .btn{
+  width: 98%;
+}
+
+}

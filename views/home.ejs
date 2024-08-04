@@ -22,7 +22,7 @@
 
         <script defer src="/javascrip/nav.js"></script>
        
-        <script defer src="/javascrip/chatdeemergencia.js"></script>
+        <link rel="stylesheet" href="/css/home.css">
        
         <link rel="shortcut icon" href="/imagenes/carrito verde icon.ico" type="image/x-icon"><!--le inserto una pequeña imagen a la etiqueta />-->
        
@@ -40,75 +40,13 @@
   </head>
 <body>
 
-  <header class="header">
+  <%- include('partials/navegador') %>  
 
-    <nav class="nav">
-      <a href="#" class="logo nav-link">Home</a>
-      <button class="nav-toggle" aria-label="Abrir menú">    <!--la amurguesa va en midia cueri-->
-        <i class="fa fa-bars"></i>
-      </button>
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a href="/views/promociones.ejs" class="nav-menu-link nav-link">Promociones</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="/views/producto.ejs" class="nav-menu-link nav-link">Productos</a>
-        </li>
-      </ul>
-    </nav>
-      
-  </header>
+  <%- include('partials/chat_emergencia') %> 
 
-  <header class="ecavesadocompra">
-
-    <div class="mediodepago">
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/master.png" >
-      </div>
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/naranjatarjeta.jpeg" >
-      </div>
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/visa.png" >
-      </div>
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/mercadopago.png" >
-      </div>
-
-      <div class="targeta">
-        <img src="/imagenes/carrito/plata.png" >
-      </div>
-
-     
-     <button class="carrito">
-        <img src="/imagenes/carrito/carrito-de-compras.png">
-     </button>
-
-    </div>
-
-  </header>
-
-  
-
+  <%- include('partials/mediodepago') %> 
 
  <main> 
-
-
-  <button class="open-botton" onclick="openForm()"><i class="bx bxs-chat"></i>¿Necesitas ayuda?</button>
-    <div class="chat__popup" id="myfrom">
-    <form action="#" class="form__cotainer">
-      <h2>Chatea con nosotros</h2>
-      <label for="msg"><b>Mensaje</b></label>
-      <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
-      <button type="submit" class="btn">Enviar</button>
-      <button type="reset"  class="btn" class="cancel" onclick="closeForm()">borrar</button>
-    </form>
-  </div>
-  
 
     <div class="bienvenida" style="background-image: url(/imagenes/colores.jpg)">
         
@@ -132,7 +70,7 @@
     
    <script src="/javascrip/saludo.js"></script>
 
-    <iframe src="carruzel.ejs" frameborder="0" ></iframe>
+   <%- include('carruzel') %>
 
     <header class="encavesadovene">
   
@@ -321,36 +259,25 @@
              <br>
             <input type="text" id="precio" name="precio" placeholder="El precio que considere">
         
-            <br> <br>
-        
-            <input class="boton" type="submit" value="Enviar"> <input type="reset">
+            <br> 
+            <br>
+            <br>
 
-           <br>
+            <input class="boton" type="submit" value="Enviar">
+
+            <br>
+            <br>
+
+            <input type="reset">
+
+            <br> <br>
         
           </form>
     </section>
   
   </main>
-  
-  <footer class="footer-servicio-social">
-  
-    <div>
-      <p class="titulofooter">SÍGUENOS EN NUESTRAS REDES SOCIALES</p> 
-      <ul class="info">
-        <li class="iten"><a href="https://www.facebook.com/?locale=es_LA" title="Facebook" target="_blank"><img src="/imagenes/facebook_logo.png"></a></li> 
-        <li class="iten"><a href="https://www.youtube.com/user/GarnierMex" title="instagram" target="_blank"><img src="/imagenes/instagram.png"></a></li> 
-        <li class="iten"><a href="https://twitter.com/garniermx" title="Twitter" target="_blank"><img src="/imagenes/twiter.png"></a></li> 
-        <li class="iten"><a href="1160873024"><img src="/imagenes/whatsapp.png"> </a></li>
-      </ul>
 
-      <div>
-        <ul>
-          <li class="iten">Auntora: Daniela Ponce , Diana Ayala , Cami Castellanos y Agustina Barrios </li>
-        </ul>
-      </div>
-
-    </div>
-  </footer>
+  <%-include('partials/pie_pagina') %>   
 
 </body>
  
