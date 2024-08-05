@@ -18,8 +18,8 @@
         <div class="container-fluid">
             <a class="navbar-brand text-white" style="font-size: 32px" href="/">Home</a>
             <div class="d-flex">
-                <a class="navbar-brand text-white" style="font-size: 24px" href="/Promociones">Promociones</a>
-                <a class="navbar-brand text-white" style="font-size: 24px" href="/">Productos</a>
+                <a class="navbar-brand text-white" style="font-size: 24px" href="/promociones">Promociones</a>
+                <a class="navbar-brand text-white" style="font-size: 24px" href="/producto">Productos</a>
             </div>
         </div>
     </nav>
@@ -29,12 +29,12 @@
     <h1 class="text-center">Eliminar Producto</h1>
     <div class="container">
         <p>¿Estas seguro que deseas eliminar el producto <%= producto.marca %>
-            <%= producto.descripcion %>
-            <%= producto.precio %>?
+                <%= producto.descripcion %>
+                    <%= producto.precio %>?
         </p>
         <form action="/<%=producto.id%>?_method=DELETE" method="POST">
             <Button class="btn btn-danger" type="submit">Eliminar</Button>
-            <a class="btn btn-primary ms-2" href="/">Cancelar</a>
+            <a class="btn btn-primary ms-2" href="/producto">Cancelar</a>
         </form>
     </div>
 </body>
