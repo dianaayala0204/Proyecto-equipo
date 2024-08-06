@@ -58,14 +58,16 @@
             <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
             <!--<img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
             <div class="card">
-              <img
+              <div class="col text-center">
+              <img 
                 height="350"
                 width="350"
                 src="../imagenes/<%=producto.imagen%>"
                 alt="<%= producto.marca %> <%= producto.descripcion %>"
               />
-              <h4><%= producto.marca %> <%= producto.descripcion %></h4>
-              <h5>Precio: $<%= producto.precio %></h5>
+            </div>
+              <h4 class="col text-center"><%= producto.marca %> <%= producto.descripcion %></h4>
+              <h5 class="col text-center">Precio: $<%= producto.precio %></h5>
               <br />
               <div class="container">
                 <div class="row">
