@@ -63,5 +63,4 @@ router.put("/:id", upload.single('imagen'), productoController.update);
 router.get("/:id/delete", productoController.delete);
 // router.get("/eliminar:id", productoController.delete);
 router.delete("/:id", productoController.destroy);
-
 module.exports = router;
