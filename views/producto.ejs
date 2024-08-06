@@ -1,106 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marimar</title>
-    <link rel="stylesheet" href="css/nuevo.css" />
 
-    <link rel="stylesheet" href="css/carrito.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marimar</title>
+  <link rel="stylesheet" href="css/nuevo.css" />
 
-    <script defer src="javascrip/nav.js"></script>
+  <link rel="stylesheet" href="css/carrito.css" />
 
-    <script defer src="javascrip/chatdeemergencia.js"></script>
+  <script defer src="javascrip/nav.js"></script>
 
-    <!-- <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon"> No encontró por espacios-->
-    <link
-      rel="shortcut icon"
-      href="imagenes/carrito_verde.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="shortcut icon"
-      href="imagenes/carrito verde icon.ico"
-      type="image/x-icon"
-    />
-    <!--le inserto una pequeña imagen a la etiqueta />-->
-  </head>
+  <script defer src="javascrip/chatdeemergencia.js"></script>
 
-  <body>
-    <button class="open-botton" onclick="openForm()">
-      <i class="bx bxs-chat"></i>¿Necesitas ayuda?
-    </button>
-    <div class="chat__popup" id="myfrom">
-      <form action="#" class="form__cotainer">
-        <h2>Chatea con nosotros</h2>
-        <label for="msg"><b>Mensaje</b></label>
-        <textarea
-          name="msg"
-          placeholder="Escribe tu mensaje aqui..."
-          required
-        ></textarea>
-        <button type="submit" class="btn">Enviar</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">
-          Cerrar
-        </button>
-      </form>
-    </div>
+  <!-- <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon"> No encontró por espacios-->
+  <link rel="shortcut icon" href="imagenes/carrito_verde.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="imagenes/carrito verde icon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--le inserto una pequeña imagen a la etiqueta />-->
+</head>
 
-    <%-include('partials/navegador')%> <%-include('partials/chat_emergencia')%>
-    <%- include('partials/mediodepago') %>
+<body>
+  <button class="open-botton" onclick="openForm()">
+    <i class="bx bxs-chat"></i>¿Necesitas ayuda?
+  </button>
+  <div class="chat__popup" id="myfrom">
+    <form action="#" class="form__cotainer">
+      <h2>Chatea con nosotros</h2>
+      <label for="msg"><b>Mensaje</b></label>
+      <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">
+        Cerrar
+      </button>
+    </form>
+  </div>
 
-    <main>
-      <h2>Productos</h2>
-      <div class="container-fluid mb-3">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <% productos.forEach(producto=> { %>
-          <div class="col">
-            <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
-            <!--<img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
-            <div class="card">
-              <div class="col text-center">
-              <img 
-                height="350"
-                width="350"
-                src="../imagenes/<%=producto.imagen%>"
-                alt="<%= producto.marca %> <%= producto.descripcion %>"
-              />
-            </div>
-              <h4 class="col text-center"><%= producto.marca %> <%= producto.descripcion %></h4>
-              <h5 class="col text-center">Precio: $<%= producto.precio %></h5>
-              <br />
-              <div class="container">
-                <div class="row">
-                  <div class="col text-center">
-                    <a
-                      class="btn btn-primary ms-2"
-                      href="/<%=producto.id%>/edit"
-                      >Editar</a
-                    >
+  <%- include('partials/navegador')%>
+    <%- include('partials/chat_emergencia')%>
+      <%- include('partials/mediodepago') %>
+
+        <main>
+          <h2>Productos</h2>
+          <!-- <div class="container-fluid position-relative z-n1 mb-3"> -->
+          <!--  Se agregó position-relative y z-indez -1 para visualizar chat emergencia -->
+          <div class="container-fluid position-relative z-n1 mb-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <% productos.forEach(producto=> { %>
+                <div class="col">
+                  <!-- <img src="/imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
+                  <!--<img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
+                  <div class="card">
+                    <div class="col text-center">
+                      <img height="350" width="350" src="../imagenes/<%=producto.imagen%>"
+                        alt="<%= producto.marca %> <%= producto.descripcion %>" />
+                    </div>
+                    <h4 class="col text-center">
+                      <%= producto.marca %>
+                        <%= producto.descripcion %>
+                    </h4>
+                    <h5 class="col text-center">Precio: $<%= producto.precio %>
+                    </h5>
+                    <br />
+                    <div class="container">
+                      <div class="row">
+                        <div class="col text-center">
+                          <a class="btn btn-primary ms-2" href="/<%=producto.id%>/edit">Editar</a>
+                        </div>
+                        <div class="col text-center">
+                          <a class="btn btn-danger ms-2" href="/<%=producto.id%>/delete">Eliminar</a>
+                        </div>
+                      </div>
+                    </div>
+                    <br />
                   </div>
-                  <div class="col text-center">
-                    <a
-                      class="btn btn-danger ms-2"
-                      href="/<%=producto.id%>/delete"
-                      >Eliminar</a
-                    >
-                  </div>
+                  <br /><br />
                 </div>
-              </div>
-              <br />
+                <% }) %>
             </div>
-            <br /><br />
           </div>
-          <% }) %>
+        </main>
+
+        <div class="form-container">
+          <a class="btn btn-primary ms-2" href="/create">Crear Nuevo Producto</a>
         </div>
-      </div>
-    </main>
 
-    <div class="form-container">
-      <a class="btn btn-primary ms-2" href="/create">Crear Nuevo Producto</a>
-    </div>
+        <%- include('../views/productos-nuevos.ejs') %>
+          <%- include('partials/pie_pagina') %>
+</body>
 
-    <%- include('../views/productos-nuevos.ejs') %>
-    <%-include('partials/pie_pagina') %>
-  </body>
 </html>

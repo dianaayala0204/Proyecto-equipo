@@ -53,7 +53,7 @@ router.get("/create", productoController.create);
 
 router.post("/create", upload.single('imagen'), productoController.stock);
 
-// MODIFICADO DIANA
+
 
 // Traer los datos del servidor al navegador 
 router.get("/:id/edit", productoController.edit);
@@ -63,11 +63,5 @@ router.put("/:id", upload.single('imagen'), productoController.update);
 router.get("/:id/delete", productoController.delete);
 // router.get("/eliminar:id", productoController.delete);
 router.delete("/:id", productoController.destroy);
-
-/** Añadir router tipo get productos nuevos para iframe productos nuevos. */
-router.get("/productos-nuevos", productoController.productos_nuevos);
-
-/** Añadir router tipo get promociones para promociones */
-router.get("/promociones", productoController.promociones);
 
 module.exports = router;
