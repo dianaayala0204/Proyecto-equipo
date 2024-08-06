@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marimar</title>
-    <link rel="stylesheet" href="css/nuevo.css" />
-
-    <link rel="stylesheet" href="css/carrito.css" />
-
-    <script defer src="javascrip/nav.js"></script>
-
-    <script defer src="javascrip/chatdeemergencia.js"></script>
-
     <!-- <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon"> No encontró por espacios-->
     <link
       rel="shortcut icon"
@@ -26,31 +18,14 @@
     <!--le inserto una pequeña imagen a la etiqueta />-->
   </head>
 
-  <body>
-    <button class="open-botton" onclick="openForm()">
-      <i class="bx bxs-chat"></i>¿Necesitas ayuda?
-    </button>
-    <div class="chat__popup" id="myfrom">
-      <form action="#" class="form__cotainer">
-        <h2>Chatea con nosotros</h2>
-        <label for="msg"><b>Mensaje</b></label>
-        <textarea
-          name="msg"
-          placeholder="Escribe tu mensaje aqui..."
-          required
-        ></textarea>
-        <button type="submit" class="btn">Enviar</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">
-          Cerrar
-        </button>
-      </form>
-    </div>
-
-    <%-include('partials/navegador')%> <%-include('partials/chat_emergencia')%>
-    <%- include('partials/mediodepago') %>
+    <%-include('partials/navegador')%> 
+    <%-include('partials/chat_emergencia')%>
+    <%-include('partials/mediodepago') %>
 
     <main>
+      <br>
       <h2>Productos</h2>
+      <br>
       <div class="container-fluid mb-3">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <% productos.forEach(producto=> { %>
@@ -61,7 +36,7 @@
               <div class="col text-center">
               <img 
                 height="350"
-                width="350"
+                width="330"
                 src="../imagenes/<%=producto.imagen%>"
                 alt="<%= producto.marca %> <%= producto.descripcion %>"
               />
@@ -100,7 +75,9 @@
       <a class="btn btn-primary ms-2" href="/create">Crear Nuevo Producto</a>
     </div>
 
+    <br>
     <%- include('../views/productos-nuevos.ejs') %>
+    <br>
     <%-include('partials/pie_pagina') %>
   </body>
 </html>

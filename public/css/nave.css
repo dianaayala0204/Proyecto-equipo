@@ -1,8 +1,8 @@
 
 .header {
-    background-color: #0769e9;
+    background-color: #0769e9; 
     height: 50px;
-    width: 102%;
+    width: 100%;
 }
   
 .nav {
@@ -10,14 +10,13 @@
     justify-content: space-between; 
     margin: 0 5px;
 }
-  
+   
 .nav-link {
-    color: rgb(255, 255, 255);
     text-decoration: none;
-}
+}   
   
 .logo {
-    font-size: 22px;
+    font-size:40px;
     font-weight: bold;
     padding-left: 3px;
     line-height: 50px;
@@ -30,7 +29,7 @@
 }
   
 .nav-menu-item {
-    font-size: 13px;
+    font-size: 16px;
     margin: 0 3px;
     line-height: 50px;
     width: max-content;     /*se utiliza para establecer el ancho máximo de un elemento*/ 
@@ -44,18 +43,18 @@
 .nav-menu-link:hover,
 .nav-menu-link_active {
     background: none;
-    color: #74c0fa;
+    color: #a2d8f3;
     transition: 0.5s;
 }
   
 /* TOGGLE  boton del navegador */
 .nav-toggle {
-    color: #c9c6c6;
+
     background: none;
     border: none;
     font-size: 30px;
     padding: 0 25px;
-    line-height: 60px;
+    line-height: 50px;
     cursor: pointer;
     
     display: none;  
@@ -72,13 +71,13 @@
         flex-direction: column;
         align-items: center;
         margin: 0;
-        background-color: #38536e;
+        background-color: #3191f1;
         position: fixed;
-        top: 60px;
+        top: 55px;
         width:100%;
         padding: 20px 0;
       
-        height: calc(100% - 60px); 
+        height: calc(40% - 60px); 
         overflow-y: auto;
       
         left: 100%; 
@@ -86,13 +85,13 @@
     }
       
     .nav-menu-item {
-        line-height: 70px;
+        line-height: 40px;
     }
       
     .nav-menu-link:hover,
     .nav-menu-link_active {
         background: none;
-        color: #95d0fd;
+        color: #2a72f7;
     }
       
     .nav-toggle {
@@ -115,7 +114,7 @@
 
 @media (min-width: 501px) and (max-width: 800px) {
     .logo {
-        font-size: 21px;
+        font-size: 25px;
         padding-left: 5px;
     }
 
@@ -132,7 +131,7 @@
 @media (min-width: 801px) and (max-width:1000px){      
       
 .logo {
-    font-size: 30px;
+    font-size: 31px;
     padding-left: 20px;
     line-height: 50px;
 }
