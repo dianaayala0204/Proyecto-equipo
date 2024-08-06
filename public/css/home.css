@@ -760,7 +760,9 @@ main{                      /*listo*/
    
     
     .boton{                        /* listo*/
-        margin-left: 70%
+        /* margin-left: 70% */
+        margin-left: 0%
+        /* Modificado este margin left para que el boton se vea centrado en la vista de la página */
     }
 
   

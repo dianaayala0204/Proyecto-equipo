@@ -11,7 +11,9 @@
 
   <script defer src="javascrip/nav.js"></script>
 
-  <script defer src="javascrip/chatdeemergencia.js"></script>
+  <!-- <script defer src="javascrip/chatdeemergencia.js"></script> -->
+  <script defer src="/javascrip/chatdeemergencia.js"></script>
+  <link rel="stylesheet" href="/css/chatemergencia.css">
 
   <!-- <link rel="shortcut icon" href="imagenes/carrito verde icon" type="image/x-icon"> No encontró por espacios-->
   <link rel="shortcut icon" href="imagenes/carrito_verde.ico" type="image/x-icon" />
@@ -21,20 +23,6 @@
 </head>
 
 <body>
-  <button class="open-botton" onclick="openForm()">
-    <i class="bx bxs-chat"></i>¿Necesitas ayuda?
-  </button>
-  <div class="chat__popup" id="myfrom">
-    <form action="#" class="form__cotainer">
-      <h2>Chatea con nosotros</h2>
-      <label for="msg"><b>Mensaje</b></label>
-      <textarea name="msg" placeholder="Escribe tu mensaje aqui..." required></textarea>
-      <button type="submit" class="btn">Enviar</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">
-        Cerrar
-      </button>
-    </form>
-  </div>
 
   <%- include('partials/navegador')%>
     <%- include('partials/chat_emergencia')%>
@@ -44,7 +32,7 @@
           <h2>Productos</h2>
           <!-- <div class="container-fluid position-relative z-n1 mb-3"> -->
           <!--  Se agregó position-relative y z-indez -1 para visualizar chat emergencia -->
-          <div class="container-fluid position-relative z-n1 mb-3">
+          <div class="container-fluid position-relative mb-3">
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <% productos.forEach(producto=> { %>
                 <div class="col">
