@@ -7,6 +7,7 @@
 .footer-servicio-social{
     background-color: rgb(209, 209, 209);
     width: 102% ;
+    margin-bottom: -20px;
 }
 
 .iten{
@@ -128,6 +129,7 @@
    
      .footer-servicio-social{
        width: 110% ;
+       margin-bottom: -20px;
     } 
 
     .info img{

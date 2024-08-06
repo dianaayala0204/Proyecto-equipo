@@ -20,18 +20,24 @@
     margin-right: 5px;
 }
                                 
-.chat__popup{
-    position: fixed;
-    bottom: 0;
-    right: 25px;
+.chat__popup {
+  position: fixed;
+  bottom: 0;
+  right: 25px;
+  z-index: 1000;
+  /* Agrega un z-index alto para que se muestre por encima del botón */
 }
 
-.form__cotainer{
-    max-width: 220px;
-    padding: 10px;
-    font-size: .8rem;
-    color: #000;
-    background-color: #ecf7ff;
+.form__cotainer {
+  max-width: 220px;
+  padding: 10px;
+  font-size: .8rem;
+  color: #000;
+  background-color: #ecf7ff;
+  border-radius: 10px;
+  /* Agrega un borde redondeado para que se vea mejor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Agrega una sombra para que se vea mejor */
 }
 
 .form__cotainer textarea{
