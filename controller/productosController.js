@@ -30,7 +30,7 @@ const productosController = {
         try {
             productos.push(nuevoProducto);
             fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-            res.redirect('/');
+            res.redirect('producto');
         }
         catch (error) {
             console.log("Error al guardar el producto");
@@ -60,7 +60,7 @@ const productosController = {
             productos[productoUpdate] = { id: Number(id), marca, descripcion, precio, imagen };
             try {
                 fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-                res.redirect('/');
+                res.redirect('producto');
             }
             catch (error) {
                 console.log("Error al guardar el producto");
@@ -93,7 +93,7 @@ const productosController = {
             productos.splice(productoEliminar, 1);
             try {
                 fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-                res.redirect('/');
+                res.redirect('producto');
             }
             catch (error) {
                 console.log("Error al guardar el producto");
