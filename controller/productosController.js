@@ -30,7 +30,7 @@ const productosController = {
         try {
             productos.push(nuevoProducto);
             fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-            res.redirect('/');
+            res.redirect('producto');
         }
         catch (error) {
             console.log("Error al guardar el producto");
@@ -41,7 +41,7 @@ const productosController = {
     },
 
 
-    
+
     edit: (req, res) => {
         const id = req.params.id;
         const producto = productos.find(producto => producto.id == id);
@@ -60,7 +60,7 @@ const productosController = {
             productos[productoUpdate] = { id: Number(id), marca, descripcion, precio, imagen };
             try {
                 fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-                res.redirect('/');
+                res.redirect('producto');
             }
             catch (error) {
                 console.log("Error al guardar el producto");
@@ -93,7 +93,7 @@ const productosController = {
             productos.splice(productoEliminar, 1);
             try {
                 fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-                res.redirect('/');
+                res.redirect('producto');
             }
             catch (error) {
                 console.log("Error al guardar el producto");
@@ -103,7 +103,17 @@ const productosController = {
         } else {
             res.status(404).send("Producto no encontrado");
         }
-    }
+    },
+
+    /** Añadido render productos-nuevos para mostrar iframe productos nuevos en productos.ejs */
+    productos_nuevos: (req, res) => {
+        res.render('productos-nuevos');
+    },
+
+    /** Añadido render promociones para mostrar página promociones */
+    promociones: (req, res) => {
+        res.render("promociones");
+    },
 }
 
 

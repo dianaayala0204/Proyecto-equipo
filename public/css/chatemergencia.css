@@ -12,6 +12,7 @@
     cursor: pointer;
     color: #fff;
     background-color: #e40404;
+    z-index: 1000; /* Cambio z-index para ponerlo encima del todo */
     
 }
 
@@ -96,7 +97,7 @@
    .open-botton{
     right: 60px;
     font-size: 13px;
- 
+    z-index: 1000; /* Cambio z-index para ponerlo encima del todo */
    }
 
    .open-botton i{
@@ -124,6 +125,7 @@
     right: 70px;
     font-size: 15px;
     width: 220px;
+    z-index: 1000; /* Cambio z-index para ponerlo encima del todo */
    }
 
   .chat__popup{
@@ -150,6 +152,7 @@
   right: 97px;
   font-size: 18px;
   width: 250px;
+  z-index: 1000; /* Cambio z-index para ponerlo encima del todo */
 }
 
 .chat__popup{
@@ -177,6 +180,7 @@
   right: 140px;
   font-size: 22px;
   width: 270px;
+  z-index: 1000; /* Cambio z-index para ponerlo encima del todo */
 }
 
 .chat__popup{

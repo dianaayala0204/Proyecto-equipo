@@ -32,6 +32,20 @@
   "marca": "Sabritas ",
   "descripcion": "Papas fritas",
   "precio": "56.000",
-  "imagen": "1722985219196-sabritas.jpeg"
+  "imagen": "1723057290059-sabritas.jpeg"
+ },
+ {
+  "id": 6,
+  "marca": "Moderna",
+  "descripcion": "Sopa de letras",
+  "precio": "56.000",
+  "imagen": "1723057306003-sopa.png"
+ },
+ {
+  "id": 7,
+  "marca": "Alpura",
+  "descripcion": "Leche de carton",
+  "precio": "569.000",
+  "imagen": "1723057336284-leche.jpg"
  }
 ]
