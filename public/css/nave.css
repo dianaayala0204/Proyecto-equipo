@@ -59,6 +59,10 @@
     
     display: none;  
 }
+
+.icono-celular {
+    color: white;
+}
   
 @media (min-width:200px) and (max-width:500px){  
   
