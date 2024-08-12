@@ -22,14 +22,14 @@
   <!--le inserto una pequeña imagen a la etiqueta />-->
 </head>
 
-<body>
+<body class="text-center mb-3">
 
   <%- include('partials/navegador')%>
     <%- include('partials/chat_emergencia')%>
       <%- include('partials/mediodepago') %>
 
         <main>
-          <h2>Productos</h2>
+          <h2 class="text-center mb-3">Productos</h2>
           <!-- <div class="container-fluid position-relative z-n1 mb-3"> -->
           <!--  Se agregó position-relative y z-indez -1 para visualizar chat emergencia -->
           <div class="container-fluid position-relative mb-3 botones_abajo">
@@ -40,7 +40,7 @@
                   <!--<img height="350" width="350" src="../imagenes/<%=producto.imagen%>" alt="<%= producto.marca %> <%= producto.descripcion %>"> -->
                   <div class="card">
                     <div class="col text-center">
-                      <img height="350" width="350" src="../imagenes/<%=producto.imagen%>"
+                      <img height="240" width="240" src="../imagenes/<%=producto.imagen%>"
                         alt="<%= producto.marca %> <%= producto.descripcion %>" />
                     </div>
                     <h4 class="col text-center">
