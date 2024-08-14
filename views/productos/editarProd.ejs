@@ -50,9 +50,22 @@
       <div>
         <label class="form-label" for="imagen">Imagen: </label>
         <input class="form-control" type="file" name="imagen" id="imagen" placeholder="Carga la imagen " required />
+        <!-- Mostrar la imagen actual -->
+        <br> 
+
+        <label for="imagen">Imagen Actual:</label>
+        <br>
+        <br> 
+        <% if (producto.imagen) { %>
+        <img 
+          src="/imagenes/<%= producto.imagen %>" style="max-width: 15%; max-height: 15%;"
+          alt="Imagen del producto"
+          style="max-width: 200px"
+        />
+        <% } %>
+
       </div>
       <div class="text-end mt-3">
-        <!-- <button class="btn btn-secondary mt-3" type="submit" value="Actualizar Producto">Actualizar Imagen</button> -->
         <input class="btn btn-primary ms-2" type="submit" value="Actualizar Producto" />
       </div>
     </div>

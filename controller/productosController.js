@@ -19,9 +19,9 @@ const productosController = {
         const precio = req.body.precio;
         const imagen = req.file ? req.file.filename : null;
 
-
         const nuevoProducto = {
-            id: productos.length + 1,
+            id:
+            productos.length > 0 ? Math.max(...productos.map((p) => p.id)) + 1 : 1,
             marca: marca,
             descripcion: descripcion,
             precio: precio,
