@@ -21,7 +21,7 @@ const productosController = {
 
         const nuevoProducto = {
             id:
-            productos.length > 0 ? Math.max(...productos.map((p) => p.id)) + 1 : 1,
+                productos.length > 0 ? Math.max(...productos.map((p) => p.id)) + 1 : 1,
             marca: marca,
             descripcion: descripcion,
             precio: precio,
@@ -53,7 +53,8 @@ const productosController = {
         const marca = req.body.marca;
         const descripcion = req.body.descripcion;
         const precio = req.body.precio;
-        const imagen = req.file ? req.file.filename : null;
+        const imagenActual = req.body.imagenActual; // Agregar constante imagenActual que obtenga la propiedad imagen sin modifcar
+        const imagen = req.file ? req.file.filename : imagenActual; // Sí file no viene vacío modificar imagen nueva, en otro caso conservar imagen actual.
 
         const productoUpdate = productos.findIndex(producto => producto.id == id);
         if (productoUpdate !== -1) {

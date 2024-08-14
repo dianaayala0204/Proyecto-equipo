@@ -4,7 +4,7 @@
 
 .ecavesadocompra {
     background-color: aquamarine;
-    width: 102%;
+    width: 100%;
     height: 40px;
 }
 
@@ -118,7 +118,7 @@
 @media (min-width: 1001px) and (max-width: 1200px) {
 
     .ecavesadocompra {
-        width: 103%;
+        width: 100%;
         height: 80px;
     }
 
@@ -155,7 +155,7 @@
     /* escrirorio monitor grande listo*/
 
     .ecavesadocompra {
-        width: 110%;
+        width: 100%;
         height: 100px;
     }
 

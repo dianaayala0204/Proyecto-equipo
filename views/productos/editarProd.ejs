@@ -36,7 +36,7 @@
       </div>
       <br />
 
-      
+
       <div>
         <label class="form-label" for="descripcion">Descripcion: </label>
         <input class="form-control" type="text" name="descripcion" id="descripcion" value="<%=producto.descripcion%>"
@@ -50,23 +50,24 @@
       <br />
       <div>
         <label class="form-label" for="imagen">Imagen: </label>
-        <input class="form-control" type="file" name="imagen" id="imagen" placeholder="Carga la imagen " required />
+        <!-- Conservar imagen Actual en campo oculto para modificar sin nueva imagen -->
+        <input type="hidden" name="imagenActual" id="imagenActual" class="form-control mb-3" value="<%= producto.imagen %>">
+
+        <!-- Se quitó la propiedad required para que no solicite obligatoriamente nueva imagen -->
+        <input class="form-control" type="file" name="imagen" id="imagen" placeholder="Carga la imagen" />
       </div>
       <div class="text-end mt-3">
         <!-- <button class="btn btn-secondary mt-3" type="submit" value="Actualizar Producto">Actualizar Imagen</button> -->
         <!-- Mostrar la imagen actual -->
-        <br> 
+        <br>
 
         <label for="imagen">Imagen Actual:</label>
         <br>
-        <br> 
+        <br>
         <% if (producto.imagen) { %>
-        <img 
-          src="/imagenes/<%= producto.imagen %>" style="max-width: 15%; max-height: 15%;"
-          alt="Imagen del producto"
-          style="max-width: 200px"
-        />
-        <% } %>
+          <img src="/imagenes/<%= producto.imagen %>" style="max-width: 15%; max-height: 15%;" alt="Imagen del producto"
+            style="max-width: 200px" />
+          <% } %>
 
       </div>
       <div class="text-end mt-3">
